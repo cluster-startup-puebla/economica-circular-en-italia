@@ -15,14 +15,15 @@
     "language": "Idioma"
   },
   "Footer": {
-    "name": "México Sustentable en Italia",
+    "name": "Clúster de Plásticos y Economía Circular del Estado de Puebla",
     "tagline": "Puente entre la oferta mexicana sustentable y el mercado italiano.",
     "links": "Páginas",
     "home": "Inicio",
     "companies": "Empresas",
     "ecosystem": "Ecosistema",
     "providers": "Proveedores",
-    "note": "Estructura inicial. Cada ficha se publica cuando la organización confirma sus datos."
+    "missionLabel": "Misión comercial",
+    "missionName": "Clúster de Plásticos y Economía Circular"
   },
   "NotFound": {
     "title": "Esa página no está en el sitio",

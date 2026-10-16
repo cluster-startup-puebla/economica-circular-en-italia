@@ -209,6 +209,10 @@
     color: var(--on-accent);
   }
 
+  [data-theme="light"] .logo-dark {
+    filter: brightness(0);
+  }
+
   .card {
     background: var(--bg-elevated);
     border: 1px solid var(--border-default);
@@ -248,19 +252,4 @@
     box-shadow: 0 0 0 3px var(--focus-ring);
   }
 
-  .hero-dark {
-    background-color: #10261c;
-    background-image: linear-gradient(135deg, rgb(31 107 69 / 0.55) 0%, rgb(16 38 28 / 0) 58%);
-    color: #ffffff;
-  }
-
-  .hero-dark .btn-secondary {
-    border-color: rgb(255 255 255 / 0.55);
-    color: #ffffff;
-  }
-
-  .hero-dark .btn-secondary:hover {
-    background: #ffffff;
-    color: #143028;
-  }
 }

@@ -5,7 +5,7 @@
     "hero": {
       "eyebrow": "Mexico · Italy",
       "title": "Sustainable Mexico, with a door into Italy",
-      "description": "A meeting point for Mexican companies that produce with an environmental standard, and for those in Italy who buy, distribute, or support that landing.",
+      "description": "It brings together Puebla's ecosystem, the companies from that ecosystem that want to be introduced in Italy, and the providers who make the landing operable.",
       "primaryCta": "See companies",
       "secondaryCta": "Explore the ecosystem",
       "mapLabel": "Map of Mexico with Puebla in the platform color"
@@ -17,29 +17,87 @@
       "startups": "Startup and Innovation Cluster"
     },
     "paths": {
-      "eyebrow": "Where to start",
-      "title": "Three doors of the same bridge",
-      "companiesTitle": "Companies",
-      "companiesDescription": "Sustainable Mexican supply ready to be introduced in Italy.",
-      "companiesLink": "See companies",
-      "ecosystemTitle": "Ecosystem",
-      "ecosystemDescription": "Puebla's articulated industry: the clusters that organize it.",
-      "ecosystemLink": "See the ecosystem",
-      "providersTitle": "Providers",
-      "providersDescription": "Landing services: legal, logistics, language, and distribution.",
-      "providersLink": "See providers"
-    },
-    "bridge": {
-      "eyebrow": "How it works",
-      "title": "From a Mexican profile to the Italian market",
-      "steps": [
+      "eyebrow": "What is on the site",
+      "title": "Ecosystem, companies, and providers",
+      "intro": "The site is not a single list. Puebla organizes its industry in clusters, companies from that ecosystem present their offer, and providers make it possible for that offer to land in Italy.",
+      "chapters": [
         {
-          "title": "The company introduces itself",
-          "description": "Product, origin, and sustainable practice, in Spanish, English, and Italian."
+          "href": "/ecosistema",
+          "kicker": "The articulated industry",
+          "title": "Ecosystem",
+          "description": "In Mexico, Puebla has an articulated industry. These clusters are that articulation, gathered in three tables, with the support of the Government of Puebla and the Secretariat of Economic Development and Tourism.",
+          "link": "See the ecosystem",
+          "points": [
+            {
+              "title": "Transformation",
+              "description": "Those who turn material into product: plastics, auto, textile, food, energy, stone, wood, chemicals, metal, and construction. Plastics opens the table."
+            },
+            {
+              "title": "Services",
+              "description": "Startups, talent, technology, and the creative economy. The Startup and Innovation Cluster opens the table."
+            },
+            {
+              "title": "Tourism",
+              "description": "Those who receive the visit: the city, health, hospitality, and the mountain ranges."
+            }
+          ]
         },
         {
-          "title": "The ecosystem opens the relationship",
-          "description": "Chambers, institutions, and allies connect supply with buyers and partners in Italy."
+          "href": "/empresas",
+          "kicker": "The offer with a profile",
+          "title": "Companies",
+          "description": "Companies from the ecosystem that already have a profile. The directory opens with three from the Startup and Innovation Cluster: Concora, Radek, and Sabia. The small mark shows which cluster they come from.",
+          "link": "See companies",
+          "points": [
+            {
+              "title": "What they do",
+              "description": "One line on the offer, the problem they address, and the solution they propose."
+            },
+            {
+              "title": "Where they come from",
+              "description": "The cluster logo sits next to the name, so the company is read inside its table."
+            },
+            {
+              "title": "How to reach them",
+              "description": "Website, email, or phone, with the profile in Spanish, English, and Italian."
+            }
+          ]
+        },
+        {
+          "href": "/proveedores",
+          "kicker": "The landing",
+          "title": "Providers",
+          "description": "The people who make the crossing to Italy operable. Without that support, the introduction stays an intention. Example profiles are replaced once the provider confirms its details.",
+          "link": "See providers",
+          "points": [
+            {
+              "title": "Legal and regulatory",
+              "description": "Market-entry paperwork for Italy."
+            },
+            {
+              "title": "Logistics",
+              "description": "Freight, customs, and delivery between Mexico and Italy."
+            },
+            {
+              "title": "Language and distribution",
+              "description": "Translation of profiles, materials, and meetings, and the path for the product to reach the buyer."
+            }
+          ]
+        }
+      ]
+    },
+    "bridge": {
+      "eyebrow": "How they read together",
+      "title": "From Puebla's industry to the Italian market",
+      "lead": "First the table that organizes the offer, then the company that introduces itself, and finally whoever makes the crossing work.",
+      "steps": [
+        {
+          "title": "The ecosystem sorts the offer",
+          "description": "Puebla's clusters say which industry each company comes from and who sits at the same table."
+        },
+        {
+          "title": "The company introduces itself",
+          "description": "Product, problem, and solution, in Spanish, English, and Italian, with its cluster mark."
         },
         {
           "title": "Providers make the crossing operable",
@@ -48,8 +106,8 @@
       ]
     },
     "closing": {
-      "title": "The directory is built from confirmed details",
-      "description": "The profiles you see today show the structure. They are replaced once each organization confirms its information.",
+      "title": "What is published is confirmed",
+      "description": "Ecosystem, companies, and providers show the structure of the site. A profile stays once the organization confirms its details.",
       "cta": "Review providers"
     }
   }

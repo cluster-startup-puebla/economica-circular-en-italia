@@ -5,7 +5,7 @@
     "hero": {
       "eyebrow": "Messico · Italia",
       "title": "Il Messico sostenibile, con una porta in Italia",
-      "description": "Un punto d'incontro per imprese messicane che producono con un criterio ambientale e per chi, in Italia, compra, distribuisce o accompagna quell'arrivo.",
+      "description": "Riunisce l'ecosistema di Puebla, le imprese di quell'ecosistema che vogliono presentarsi in Italia e i fornitori che rendono operativo l'arrivo.",
       "primaryCta": "Vedi le imprese",
       "secondaryCta": "Conosci l'ecosistema",
       "mapLabel": "Mappa del Messico con Puebla nel colore della piattaforma"
@@ -17,29 +17,87 @@
       "startups": "Cluster di startup e innovazione"
     },
     "paths": {
-      "eyebrow": "Da dove entrare",
-      "title": "Tre porte dello stesso ponte",
-      "companiesTitle": "Imprese",
-      "companiesDescription": "L'offerta messicana sostenibile che vuole presentarsi in Italia.",
-      "companiesLink": "Vedi le imprese",
-      "ecosystemTitle": "Ecosistema",
-      "ecosystemDescription": "L'industria articolata di Puebla: i cluster che la organizzano.",
-      "ecosystemLink": "Vedi l'ecosistema",
-      "providersTitle": "Fornitori",
-      "providersDescription": "Servizi per l'arrivo: legale, logistica, lingua e distribuzione.",
-      "providersLink": "Vedi i fornitori"
-    },
-    "bridge": {
-      "eyebrow": "Come si percorre",
-      "title": "Dalla scheda messicana al mercato italiano",
-      "steps": [
+      "eyebrow": "Cosa c'è nel sito",
+      "title": "Ecosistema, imprese e fornitori",
+      "intro": "Il sito non è un solo elenco. Puebla organizza la sua industria in cluster, le imprese di quell'ecosistema presentano la loro offerta e i fornitori fanno sì che quell'offerta possa arrivare in Italia.",
+      "chapters": [
         {
-          "title": "L'impresa si presenta",
-          "description": "Prodotto, origine e pratica sostenibile, in spagnolo, inglese e italiano."
+          "href": "/ecosistema",
+          "kicker": "L'industria articolata",
+          "title": "Ecosistema",
+          "description": "In Messico, Puebla ha un'industria articolata. Questi cluster sono quell'articolazione, riuniti in tre tavoli, con il sostegno del Governo di Puebla e della Segreteria allo sviluppo economico e al turismo.",
+          "link": "Vedi l'ecosistema",
+          "points": [
+            {
+              "title": "Trasformazione",
+              "description": "Chi trasforma la materia in prodotto: plastica, auto, tessile, alimenti, energia, pietra, legno, chimica, metallo e costruzione. Quello delle plastiche apre il tavolo."
+            },
+            {
+              "title": "Servizi",
+              "description": "Startup, talento, tecnologia ed economia creativa. Il Cluster di startup e innovazione apre il tavolo."
+            },
+            {
+              "title": "Turismo",
+              "description": "Chi accoglie la visita: città, salute, ospitalità e le montagne."
+            }
+          ]
         },
         {
-          "title": "L'ecosistema apre la relazione",
-          "description": "Camere, istituzioni e alleati collegano l'offerta a chi compra o accompagna in Italia."
+          "href": "/empresas",
+          "kicker": "L'offerta con scheda",
+          "title": "Imprese",
+          "description": "Imprese dell'ecosistema che hanno già una scheda. Oggi l'elenco apre con tre del Cluster di startup e innovazione: Concora, Radek e Sabia. Il marchio piccolo dice da quale cluster arrivano.",
+          "link": "Vedi le imprese",
+          "points": [
+            {
+              "title": "Cosa fanno",
+              "description": "Una riga sull'offerta, il problema che affrontano e la soluzione che propongono."
+            },
+            {
+              "title": "Da dove arrivano",
+              "description": "Il logo del cluster sta accanto al nome, per leggere l'impresa dentro il suo tavolo."
+            },
+            {
+              "title": "Come contattarle",
+              "description": "Sito, email o telefono, con la scheda in spagnolo, inglese e italiano."
+            }
+          ]
+        },
+        {
+          "href": "/proveedores",
+          "kicker": "L'arrivo",
+          "title": "Fornitori",
+          "description": "Chi rende operativo il passaggio in Italia. Senza quell'accompagnamento, la presentazione resta un'intenzione. Le schede di esempio si sostituiscono quando il fornitore conferma i propri dati.",
+          "link": "Vedi i fornitori",
+          "points": [
+            {
+              "title": "Legale e normativo",
+              "description": "Pratiche di ingresso nel mercato italiano."
+            },
+            {
+              "title": "Logistica",
+              "description": "Trasporto, dogana e consegna tra Messico e Italia."
+            },
+            {
+              "title": "Lingua e distribuzione",
+              "description": "Traduzione di schede, materiali e riunioni, e la strada perché il prodotto arrivi a chi compra."
+            }
+          ]
+        }
+      ]
+    },
+    "bridge": {
+      "eyebrow": "Come si leggono insieme",
+      "title": "Dall'industria di Puebla al mercato italiano",
+      "lead": "Prima il tavolo che organizza l'offerta, poi l'impresa che si presenta, e alla fine chi fa funzionare il passaggio.",
+      "steps": [
+        {
+          "title": "L'ecosistema ordina l'offerta",
+          "description": "I cluster di Puebla dicono da quale industria arriva ogni impresa e con chi siede allo stesso tavolo."
+        },
+        {
+          "title": "L'impresa si presenta",
+          "description": "Prodotto, problema e soluzione, in spagnolo, inglese e italiano, con il marchio del suo cluster."
         },
         {
           "title": "Il fornitore rende operativo il passaggio",
@@ -48,8 +106,8 @@
       ]
     },
     "closing": {
-      "title": "L'elenco si costruisce con dati confermati",
-      "description": "Le schede di oggi mostrano la struttura. Si sostituiscono quando ogni organizzazione conferma le proprie informazioni.",
+      "title": "Quello che si pubblica, si conferma",
+      "description": "Ecosistema, imprese e fornitori mostrano la struttura del sito. Ogni scheda resta quando l'organizzazione conferma i propri dati.",
       "cta": "Rivedi i fornitori"
     }
   }

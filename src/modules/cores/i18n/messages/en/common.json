@@ -15,14 +15,15 @@
     "language": "Language"
   },
   "Footer": {
-    "name": "Sustainable Mexico in Italy",
+    "name": "Clúster de Plásticos y Economía Circular del Estado de Puebla",
     "tagline": "A bridge between sustainable Mexican supply and the Italian market.",
     "links": "Pages",
     "home": "Home",
     "companies": "Companies",
     "ecosystem": "Ecosystem",
     "providers": "Providers",
-    "note": "Initial structure. Each profile is published once the organization confirms its details."
+    "missionLabel": "Commercial mission",
+    "missionName": "Clúster de Plásticos y Economía Circular"
   },
   "NotFound": {
     "title": "That page is not on this site",

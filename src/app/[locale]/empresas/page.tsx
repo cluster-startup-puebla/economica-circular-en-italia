@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { companies } from "@/data/directory";
+import { companies } from "@/data/companies";
 import { routing } from "@/modules/cores/i18n/src/config/routing";
 import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface";
 import { buildMetadata } from "@/modules/cores/site/src/services/page-metadata";
-import { DirectoryList } from "@/modules/features/directory/src/directory-list";
+import { CompanyList } from "@/modules/features/companies/src/company-list";
 import { SectionHeader } from "@/modules/shared/ui/src/components";
 
 export function generateStaticParams() {
@@ -36,7 +36,7 @@ export default async function CompaniesPage({ params }: { params: Promise<{ loca
       <div className="container-site">
         <SectionHeader as="h1" eyebrow={t("eyebrow")} title={t("title")} description={t("description")} />
         <div className="mt-12">
-          <DirectoryList entries={companies} locale={locale as Locale} namespace="Companies" />
+          <CompanyList companies={companies} locale={locale as Locale} />
         </div>
       </div>
     </section>

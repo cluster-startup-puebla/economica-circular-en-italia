@@ -4,10 +4,15 @@
     "metaDescription": "Directorio de empresas mexicanas sustentables que buscan presentarse en Italia.",
     "eyebrow": "Oferta mexicana",
     "title": "Empresas",
-    "description": "Aquí vive la oferta: empresas mexicanas con una práctica sustentable que quieren cruzar hacia Italia. Las fichas de ejemplo marcan la estructura; el nombre real entra cuando la empresa lo confirma.",
-    "search": "Buscar por nombre, sector o región",
-    "example": "Ejemplo",
+    "description": "Empresas del ecosistema que ya tienen ficha. El sello chiquito es el clúster del que vienen.",
+    "search": "Buscar empresa...",
+    "view": "Ver ficha",
+    "back": "Volver a empresas",
+    "problem": "Problema",
+    "solution": "Solución",
+    "contact": "Contacto",
+    "website": "Sitio",
     "empty": "Ninguna ficha coincide con esa búsqueda.",
-    "count": "{count, plural, one {# ficha} other {# fichas}}"
+    "count": "{count, plural, one {# empresa} other {# empresas}}"
   }
 }

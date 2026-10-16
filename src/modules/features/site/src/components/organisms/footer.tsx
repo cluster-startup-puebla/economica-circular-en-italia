@@ -31,9 +31,14 @@ export async function Footer() {
         </div>
       </div>
 
-      <div className="container-site mt-12 border-t border-line pt-6">
+      <div className="container-site mt-12 border-t border-line pt-10 text-center">
+        <p className="text-micro uppercase tracking-wider text-accent">{t("missionLabel")}</p>
+        <p className="mt-2 font-display text-body-lg text-ink">{t("missionName")}</p>
+      </div>
+
+      <div className="container-site mt-8 text-center">
         <p className="text-micro text-ink-muted">
-          © {new Date().getFullYear()} {t("name")}. {t("note")}
+          © {new Date().getFullYear()} {t("name")}
         </p>
       </div>
     </footer>

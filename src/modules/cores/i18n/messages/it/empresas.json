@@ -4,10 +4,15 @@
     "metaDescription": "Elenco di imprese messicane sostenibili che vogliono presentarsi in Italia.",
     "eyebrow": "Offerta messicana",
     "title": "Imprese",
-    "description": "Qui vive l'offerta: imprese messicane con una pratica sostenibile che vogliono arrivare in Italia. Le schede di esempio mostrano la struttura; il nome reale entra quando l'impresa lo conferma.",
-    "search": "Cerca per nome, settore o regione",
-    "example": "Esempio",
+    "description": "Imprese dell'ecosistema che hanno già una scheda. Il segno piccolo è il cluster da cui arrivano.",
+    "search": "Cerca impresa...",
+    "view": "Vedi scheda",
+    "back": "Torna alle imprese",
+    "problem": "Problema",
+    "solution": "Soluzione",
+    "contact": "Contatto",
+    "website": "Sito",
     "empty": "Nessuna scheda corrisponde a questa ricerca.",
-    "count": "{count, plural, one {# scheda} other {# schede}}"
+    "count": "{count, plural, one {# impresa} other {# imprese}}"
   }
 }

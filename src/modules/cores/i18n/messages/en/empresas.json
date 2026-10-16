@@ -4,10 +4,15 @@
     "metaDescription": "Directory of sustainable Mexican companies looking to enter Italy.",
     "eyebrow": "Mexican supply",
     "title": "Companies",
-    "description": "This is the supply side: Mexican companies with a sustainable practice that want to cross into Italy. Example profiles show the structure; the real name goes in once the company confirms it.",
-    "search": "Search by name, sector, or region",
-    "example": "Example",
+    "description": "Ecosystem companies that already have a profile. The small mark is the cluster they come from.",
+    "search": "Search companies...",
+    "view": "View profile",
+    "back": "Back to companies",
+    "problem": "Problem",
+    "solution": "Solution",
+    "contact": "Contact",
+    "website": "Website",
     "empty": "No profile matches that search.",
-    "count": "{count, plural, one {# profile} other {# profiles}}"
+    "count": "{count, plural, one {# company} other {# companies}}"
   }
 }

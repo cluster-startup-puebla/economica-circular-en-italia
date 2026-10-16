@@ -15,14 +15,15 @@
     "language": "Lingua"
   },
   "Footer": {
-    "name": "Messico sostenibile in Italia",
+    "name": "Clúster de Plásticos y Economía Circular del Estado de Puebla",
     "tagline": "Un ponte tra l'offerta messicana sostenibile e il mercato italiano.",
     "links": "Pagine",
     "home": "Home",
     "companies": "Imprese",
     "ecosystem": "Ecosistema",
     "providers": "Fornitori",
-    "note": "Struttura iniziale. Ogni scheda si pubblica quando l'organizzazione conferma i propri dati."
+    "missionLabel": "Missione commerciale",
+    "missionName": "Clúster de Plásticos y Economía Circular"
   },
   "NotFound": {
     "title": "Questa pagina non è nel sito",

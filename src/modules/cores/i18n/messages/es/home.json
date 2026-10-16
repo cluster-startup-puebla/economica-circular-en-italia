@@ -5,7 +5,7 @@
     "hero": {
       "eyebrow": "México · Italia",
       "title": "México sustentable, con puerta en Italia",
-      "description": "Un punto de encuentro para empresas mexicanas que producen con criterio ambiental y para quienes, en Italia, compran, distribuyen o acompañan ese aterrizaje.",
+      "description": "Reúne el ecosistema de Puebla, las empresas de ese ecosistema que quieren presentarse en Italia y los proveedores que hacen operable el aterrizaje.",
       "primaryCta": "Ver empresas",
       "secondaryCta": "Conocer el ecosistema",
       "mapLabel": "Mapa de México con Puebla en el color de la plataforma"
@@ -17,29 +17,87 @@
       "startups": "Clúster de Startups e Innovación"
     },
     "paths": {
-      "eyebrow": "Por dónde entrar",
-      "title": "Tres puertas del mismo puente",
-      "companiesTitle": "Empresas",
-      "companiesDescription": "La oferta mexicana sustentable que quiere presentarse en Italia.",
-      "companiesLink": "Ver empresas",
-      "ecosystemTitle": "Ecosistema",
-      "ecosystemDescription": "La industria articulada de Puebla: los clústeres que la organizan.",
-      "ecosystemLink": "Ver ecosistema",
-      "providersTitle": "Proveedores",
-      "providersDescription": "Servicios para aterrizar: legal, logística, idioma y distribución.",
-      "providersLink": "Ver proveedores"
-    },
-    "bridge": {
-      "eyebrow": "Cómo se recorre",
-      "title": "De la ficha mexicana al mercado italiano",
-      "steps": [
+      "eyebrow": "Qué hay en el sitio",
+      "title": "Ecosistema, empresas y proveedores",
+      "intro": "El sitio no es una sola lista. Puebla organiza su industria en clústeres, las empresas de ese ecosistema presentan su oferta, y los proveedores hacen que esa oferta pueda aterrizar en Italia.",
+      "chapters": [
         {
-          "title": "La empresa se presenta",
-          "description": "Producto, origen y práctica sustentable, en español, inglés e italiano."
+          "href": "/ecosistema",
+          "kicker": "La industria articulada",
+          "title": "Ecosistema",
+          "description": "En México, Puebla tiene una industria articulada. Estos clústeres son esa articulación, reunidos en tres mesas, con el apoyo del Gobierno de Puebla y de la Secretaría de Desarrollo Económico y Turismo.",
+          "link": "Ver el ecosistema",
+          "points": [
+            {
+              "title": "Transformación",
+              "description": "Quienes convierten materia en producto: plástico, auto, textil, alimentos, energía, piedra, madera, química, metal y construcción. El de plásticos abre la mesa."
+            },
+            {
+              "title": "Servicios",
+              "description": "Startups, talento, tecnología y economía creativa. El Clúster de Startups e Innovación abre la mesa."
+            },
+            {
+              "title": "Turismo",
+              "description": "Quienes reciben la visita: ciudad, salud, hospitalidad y las sierras."
+            }
+          ]
         },
         {
-          "title": "El ecosistema abre la relación",
-          "description": "Cámaras, instituciones y aliados conectan la oferta con quien compra o acompaña en Italia."
+          "href": "/empresas",
+          "kicker": "La oferta con ficha",
+          "title": "Empresas",
+          "description": "Empresas del ecosistema que ya tienen ficha. Hoy el directorio abre con tres del Clúster de Startups e Innovación: Concora, Radek y Sabia. El sello chiquito dice de qué clúster vienen.",
+          "link": "Ver empresas",
+          "points": [
+            {
+              "title": "Qué hacen",
+              "description": "Una línea de la oferta, el problema que atienden y la solución que proponen."
+            },
+            {
+              "title": "De dónde vienen",
+              "description": "El logo del clúster va junto al nombre, para leer la empresa dentro de su mesa."
+            },
+            {
+              "title": "Cómo contactarlas",
+              "description": "Sitio, correo o teléfono, con la ficha en español, inglés e italiano."
+            }
+          ]
+        },
+        {
+          "href": "/proveedores",
+          "kicker": "El aterrizaje",
+          "title": "Proveedores",
+          "description": "Quienes vuelven operable el cruce a Italia. Sin ese acompañamiento, la presentación se queda en una intención. Las fichas de ejemplo se sustituyen cuando el proveedor confirma sus datos.",
+          "link": "Ver proveedores",
+          "points": [
+            {
+              "title": "Legal y normativo",
+              "description": "Trámites de ingreso al mercado italiano."
+            },
+            {
+              "title": "Logística",
+              "description": "Traslado, aduana y entrega entre México e Italia."
+            },
+            {
+              "title": "Idioma y distribución",
+              "description": "Traducción de fichas, materiales y reuniones, y el camino para que el producto llegue a quien compra."
+            }
+          ]
+        }
+      ]
+    },
+    "bridge": {
+      "eyebrow": "Cómo se leen juntas",
+      "title": "De la industria poblana al mercado italiano",
+      "lead": "Primero la mesa que organiza la oferta, después la empresa que se presenta, y al final quien hace que el cruce funcione.",
+      "steps": [
+        {
+          "title": "El ecosistema ordena la oferta",
+          "description": "Los clústeres de Puebla dicen de qué industria viene cada empresa y con quién se sienta en la mesa."
+        },
+        {
+          "title": "La empresa se presenta",
+          "description": "Producto, problema y solución, en español, inglés e italiano, con el sello de su clúster."
         },
         {
           "title": "El proveedor hace operable el cruce",
@@ -48,8 +106,8 @@
       ]
     },
     "closing": {
-      "title": "El padrón se arma con datos confirmados",
-      "description": "Las fichas que ves hoy son ejemplos de estructura. Se reemplazan cuando cada organización confirme su información.",
+      "title": "Lo que se publica, se confirma",
+      "description": "Ecosistema, empresas y proveedores muestran la estructura del sitio. Cada ficha se queda cuando la organización confirma sus datos.",
       "cta": "Revisar proveedores"
     }
   }

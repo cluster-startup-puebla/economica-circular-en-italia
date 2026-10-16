@@ -6,7 +6,7 @@ import { Allies } from "@/modules/features/pages/src/sections/home/allies";
 import { Bridge } from "@/modules/features/pages/src/sections/home/bridge";
 import { ClosingCta } from "@/modules/features/pages/src/sections/home/closing-cta";
 import { Hero } from "@/modules/features/pages/src/sections/home/hero";
-import { Paths } from "@/modules/features/pages/src/sections/home/paths";
+import { Paths, type PathChapter } from "@/modules/features/pages/src/sections/home/paths";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -40,7 +40,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         description={t("hero.description")}
         primaryCta={t("hero.primaryCta")}
         secondaryCta={t("hero.secondaryCta")}
-        mapLabel={t("hero.mapLabel")}
       />
       <Allies
         label={t("allies.label")}
@@ -51,30 +50,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Paths
         eyebrow={t("paths.eyebrow")}
         title={t("paths.title")}
-        cards={[
-          {
-            href: "/empresas",
-            title: t("paths.companiesTitle"),
-            description: t("paths.companiesDescription"),
-            link: t("paths.companiesLink"),
-          },
-          {
-            href: "/ecosistema",
-            title: t("paths.ecosystemTitle"),
-            description: t("paths.ecosystemDescription"),
-            link: t("paths.ecosystemLink"),
-          },
-          {
-            href: "/proveedores",
-            title: t("paths.providersTitle"),
-            description: t("paths.providersDescription"),
-            link: t("paths.providersLink"),
-          },
-        ]}
+        intro={t("paths.intro")}
+        chapters={t.raw("paths.chapters") as PathChapter[]}
       />
       <Bridge
         eyebrow={t("bridge.eyebrow")}
         title={t("bridge.title")}
+        lead={t("bridge.lead")}
         steps={t.raw("bridge.steps") as { title: string; description: string }[]}
       />
       <ClosingCta title={t("closing.title")} description={t("closing.description")} cta={t("closing.cta")} />
