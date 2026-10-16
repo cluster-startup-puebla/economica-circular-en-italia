@@ -32,7 +32,7 @@ export default async function CompaniesPage({ params }: { params: Promise<{ loca
   const t = await getTranslations("Companies");
 
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="container-site">
         <SectionHeader as="h1" eyebrow={t("eyebrow")} title={t("title")} description={t("description")} />
         <div className="mt-12">

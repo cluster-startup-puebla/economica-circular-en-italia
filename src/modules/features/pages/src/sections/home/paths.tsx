@@ -23,12 +23,12 @@ interface PathsProps {
 
 export function Paths({ eyebrow, title, intro, chapters }: PathsProps) {
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="container-site">
         <p className="text-micro uppercase tracking-wider text-accent">{eyebrow}</p>
         <h2 className="text-h2 mt-3 max-w-3xl font-display text-ink">{title}</h2>
         <p className="text-body-lg mt-4 max-w-2xl text-ink-secondary">{intro}</p>
-        <div className="mt-14 flex flex-col gap-16">
+        <div className="mt-10 flex flex-col gap-12 sm:mt-14 sm:gap-16">
           {chapters.map((chapter) => (
             <article
               key={chapter.href}

@@ -31,6 +31,15 @@ export function Header() {
     setOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <>
       <a
@@ -42,7 +51,9 @@ export function Header() {
 
       <header
         className={`sticky top-0 z-50 transition-[padding] duration-300 ease-out motion-reduce:transition-none ${
-          condensed ? "px-3 pt-2 sm:px-4 sm:pt-3" : "px-0 pt-0"
+          condensed
+            ? "px-3 pt-[max(0.5rem,env(safe-area-inset-top))] sm:px-4 sm:pt-[max(0.75rem,env(safe-area-inset-top))]"
+            : "px-0 pt-[env(safe-area-inset-top)]"
         }`}
       >
         <div
@@ -52,9 +63,13 @@ export function Header() {
               : "max-w-none border-b border-line bg-surface/90 backdrop-blur-md"
           }`}
         >
-          <div className={`container-site flex items-center justify-between gap-4 ${condensed ? "py-2" : "py-3"}`}>
-            <Link href="/" aria-label={t("home")} className="h-9 min-w-0 sm:h-10">
-              <Logo title={t("mark")} subtitle={t("markLine")} className="max-w-[12rem] sm:max-w-none" />
+          <div
+            className={`flex items-center justify-between gap-2 sm:gap-3 ${
+              condensed ? "px-3 py-1.5 sm:px-4" : "container-site py-2"
+            }`}
+          >
+            <Link href="/" aria-label={t("home")} className="flex h-9 min-w-0 flex-1 items-center overflow-hidden sm:h-10 lg:flex-none">
+              <Logo title={t("mark")} subtitle={t("markLine")} className="w-full lg:w-auto" />
             </Link>
 
             <nav className="hidden lg:block" aria-label={t("label")}>
@@ -64,7 +79,7 @@ export function Header() {
                     <Link
                       href={item.href}
                       aria-current={isActive(item.href) ? "page" : undefined}
-                      className={`text-small transition ${
+                      className={`inline-flex min-h-11 items-center text-small transition ${
                         isActive(item.href) ? "font-semibold text-brand" : "text-ink-secondary hover:text-accent"
                       }`}
                     >
@@ -75,12 +90,12 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="flex items-center gap-2">
+            <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
               <LocaleSwitcher />
               <ThemeToggle />
               <button
                 type="button"
-                className="rounded-sm border border-line p-2 text-ink lg:hidden"
+                className="inline-flex size-11 items-center justify-center rounded-full border border-line text-ink lg:hidden"
                 aria-expanded={open}
                 aria-controls="mobile-nav"
                 aria-label={open ? t("close") : t("open")}
@@ -95,7 +110,7 @@ export function Header() {
         {open ? (
           <nav
             id="mobile-nav"
-            className="mx-3 mt-2 rounded-md border border-line bg-surface shadow-md lg:hidden"
+            className="mx-3 mt-2 max-h-[min(70dvh,32rem)] overflow-y-auto rounded-md border border-line bg-surface shadow-md lg:hidden"
             aria-label={t("label")}
           >
             <ul className="flex flex-col p-4">
@@ -103,7 +118,7 @@ export function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block py-3 text-body transition ${
+                    className={`flex min-h-11 items-center text-body transition ${
                       isActive(item.href) ? "font-semibold text-brand" : "text-ink-secondary"
                     }`}
                     onClick={() => setOpen(false)}

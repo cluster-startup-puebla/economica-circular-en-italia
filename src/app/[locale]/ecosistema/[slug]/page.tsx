@@ -44,7 +44,7 @@ export default async function ClusterPage({
   const roles = t.raw("roles") as Record<string, string>;
 
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="container-site max-w-4xl">
         <Link href="/ecosistema" className="text-small text-link">
           {t("back")}
@@ -57,7 +57,7 @@ export default async function ClusterPage({
               <img src={cluster.logo} alt="" className="max-h-full max-w-full object-contain" />
             ) : null}
           </div>
-          <div>
+          <div className="min-w-0">
             <p className="badge-brand">{status[cluster.status] ?? cluster.status}</p>
             <h1 className="text-h1 mt-3 font-display text-ink">{cluster.name}</h1>
             <p className="text-body-lg mt-3 text-ink-secondary">{cluster.legalName || t("pending")}</p>
@@ -66,7 +66,7 @@ export default async function ClusterPage({
                 href={toHref(cluster.website)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-small text-link"
+                className="mt-4 inline-flex min-h-11 max-w-full items-center gap-2 text-small break-all text-link"
               >
                 <Globe size={16} aria-hidden />
                 {socialLabel(cluster.website)}
@@ -99,7 +99,7 @@ export default async function ClusterPage({
                   href={toHref(social)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-small text-link"
+                  className="inline-flex min-h-11 items-center text-small break-all text-link"
                 >
                   {socialNetwork(social)} · {socialLabel(social)}
                 </a>
@@ -122,14 +122,14 @@ export default async function ClusterPage({
                 {contact.phone ? (
                   <a
                     href={`tel:${contact.phone.replace(/\s/g, "")}`}
-                    className="mt-3 flex items-center gap-2 text-small text-link"
+                    className="mt-3 flex min-h-11 items-center gap-2 text-small text-link"
                   >
                     <Phone size={14} aria-hidden />
                     {contact.phone}
                   </a>
                 ) : null}
                 {contact.email ? (
-                  <a href={`mailto:${contact.email}`} className="mt-2 flex items-center gap-2 text-small text-link">
+                  <a href={`mailto:${contact.email}`} className="mt-2 flex min-h-11 items-center gap-2 text-small break-all text-link">
                     <Mail size={14} aria-hidden />
                     {contact.email}
                   </a>

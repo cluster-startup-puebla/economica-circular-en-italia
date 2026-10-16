@@ -8,7 +8,7 @@ export async function Footer() {
   const nav = await getTranslations("Nav");
 
   return (
-    <footer className="mt-24 border-t border-line bg-surface-subtle py-16">
+    <footer className="mt-16 border-t border-line bg-surface-subtle py-12 pb-[max(3rem,env(safe-area-inset-bottom))] sm:mt-24 sm:py-16">
       <div className="container-site grid gap-12 md:grid-cols-[1.4fr_1fr]">
         <div>
           <Link href="/" className="inline-flex h-10" aria-label={nav("home")}>
@@ -19,10 +19,10 @@ export async function Footer() {
 
         <div>
           <p className="text-micro uppercase tracking-wide text-ink-muted">{t("links")}</p>
-          <ul className="mt-3 space-y-2 text-small">
+          <ul className="mt-3 text-small">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-link">
+                <Link href={item.href} className="text-link inline-flex min-h-11 items-center">
                   {t(item.key)}
                 </Link>
               </li>

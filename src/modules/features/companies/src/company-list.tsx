@@ -46,9 +46,9 @@ export function CompanyList({ companies, locale }: CompanyListProps) {
             <Link
               key={company.slug}
               href={`/empresas/${company.slug}`}
-              className="group flex items-center gap-4 rounded-md px-4 py-3 transition-colors hover:bg-surface-subtle"
+              className="group flex items-center gap-3 rounded-md px-2 py-3 transition-colors hover:bg-surface-subtle active:bg-surface-subtle sm:gap-4 sm:px-4"
             >
-              <span className="flex h-[46px] w-[91px] shrink-0 items-center justify-center sm:h-[53px] sm:w-[122px]">
+              <span className="flex h-10 w-16 shrink-0 items-center justify-center sm:h-[53px] sm:w-[122px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={company.logo}

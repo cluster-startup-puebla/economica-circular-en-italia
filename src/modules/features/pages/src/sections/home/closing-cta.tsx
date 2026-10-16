@@ -8,7 +8,7 @@ interface ClosingCtaProps {
 
 export function ClosingCta({ title, description, cta }: ClosingCtaProps) {
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="container-site">
         <div className="rounded-lg bg-navy px-6 py-12 text-on-brand sm:px-12">
           <h2 className="text-h2 max-w-2xl font-display">{title}</h2>

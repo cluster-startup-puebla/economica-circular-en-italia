@@ -32,7 +32,7 @@ export default async function EcosystemPage({ params }: { params: Promise<{ loca
   const clusters = getClusters();
 
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="container-site">
         <ClusterGrid
           clusters={clusters}

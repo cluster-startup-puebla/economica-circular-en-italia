@@ -6,7 +6,7 @@ interface LogoProps {
 
 export function Logo({ className = "", title, subtitle }: LogoProps) {
   return (
-    <span className={`inline-flex h-full items-center gap-2.5 text-ink ${className}`}>
+    <span className={`flex h-full min-w-0 max-w-full items-center gap-2.5 overflow-hidden text-ink ${className}`}>
       <svg viewBox="0 0 32 32" className="h-full w-auto shrink-0" aria-hidden="true">
         <rect width="32" height="32" rx="8" className="fill-brand" />
         <path

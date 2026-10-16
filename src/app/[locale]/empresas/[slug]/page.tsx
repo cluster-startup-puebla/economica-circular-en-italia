@@ -44,7 +44,7 @@ export default async function CompanyPage({
   const lang = locale as Locale;
 
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="container-site max-w-4xl">
         <Link href="/empresas" className="text-small text-link">
           {t("back")}
@@ -61,7 +61,7 @@ export default async function CompanyPage({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={company.cluster.logo} alt={company.cluster.name[lang]} className="absolute right-2 bottom-2 h-5 w-auto max-w-20 object-contain" />
           </div>
-          <div>
+          <div className="min-w-0">
             <ul className="flex flex-wrap gap-1.5">
               {company.industries.map((id) => (
                 <li key={id} className="badge-brand">
@@ -100,7 +100,7 @@ export default async function CompanyPage({
           <ul className="mt-3 space-y-2">
             {company.contact.website ? (
               <li>
-                <a href={company.contact.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-small text-link">
+                <a href={company.contact.website} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-small break-all text-link">
                   <Globe size={14} aria-hidden />
                   {t("website")}
                 </a>
@@ -108,7 +108,7 @@ export default async function CompanyPage({
             ) : null}
             {company.contact.email ? (
               <li>
-                <a href={`mailto:${company.contact.email}`} className="inline-flex items-center gap-2 text-small text-link">
+                <a href={`mailto:${company.contact.email}`} className="inline-flex min-h-11 items-center gap-2 text-small break-all text-link">
                   <Mail size={14} aria-hidden />
                   {company.contact.email}
                 </a>
@@ -116,7 +116,7 @@ export default async function CompanyPage({
             ) : null}
             {company.contact.phone ? (
               <li>
-                <a href={`tel:${company.contact.phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 text-small text-link">
+                <a href={`tel:${company.contact.phone.replace(/\s/g, "")}`} className="inline-flex min-h-11 items-center gap-2 text-small text-link">
                   <Phone size={14} aria-hidden />
                   {company.contact.phone}
                 </a>
