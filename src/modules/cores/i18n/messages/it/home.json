@@ -1,0 +1,56 @@
+{
+  "Home": {
+    "metaTitle": "Messico sostenibile in Italia",
+    "metaDescription": "Un ponte tra imprese messicane sostenibili e il mercato italiano. Imprese, ecosistema e fornitori in un unico sito.",
+    "hero": {
+      "eyebrow": "Messico · Italia",
+      "title": "Il Messico sostenibile, con una porta in Italia",
+      "description": "Un punto d'incontro per imprese messicane che producono con un criterio ambientale e per chi, in Italia, compra, distribuisce o accompagna quell'arrivo.",
+      "primaryCta": "Vedi le imprese",
+      "secondaryCta": "Conosci l'ecosistema",
+      "mapLabel": "Mappa del Messico con Puebla nel colore della piattaforma"
+    },
+    "allies": {
+      "label": "Innovazione sociale, ambientale e tecnologica",
+      "note": "Il Cluster delle plastiche è la sede e la missione commerciale, e invita il Cluster delle startup.",
+      "plastics": "Cluster delle plastiche e dell'economia circolare",
+      "startups": "Cluster di startup e innovazione"
+    },
+    "paths": {
+      "eyebrow": "Da dove entrare",
+      "title": "Tre porte dello stesso ponte",
+      "companiesTitle": "Imprese",
+      "companiesDescription": "L'offerta messicana sostenibile che vuole presentarsi in Italia.",
+      "companiesLink": "Vedi le imprese",
+      "ecosystemTitle": "Ecosistema",
+      "ecosystemDescription": "L'industria articolata di Puebla: i cluster che la organizzano.",
+      "ecosystemLink": "Vedi l'ecosistema",
+      "providersTitle": "Fornitori",
+      "providersDescription": "Servizi per l'arrivo: legale, logistica, lingua e distribuzione.",
+      "providersLink": "Vedi i fornitori"
+    },
+    "bridge": {
+      "eyebrow": "Come si percorre",
+      "title": "Dalla scheda messicana al mercato italiano",
+      "steps": [
+        {
+          "title": "L'impresa si presenta",
+          "description": "Prodotto, origine e pratica sostenibile, in spagnolo, inglese e italiano."
+        },
+        {
+          "title": "L'ecosistema apre la relazione",
+          "description": "Camere, istituzioni e alleati collegano l'offerta a chi compra o accompagna in Italia."
+        },
+        {
+          "title": "Il fornitore rende operativo il passaggio",
+          "description": "Pratiche, logistica, lingua e distribuzione perché l'arrivo non resti un'intenzione."
+        }
+      ]
+    },
+    "closing": {
+      "title": "L'elenco si costruisce con dati confermati",
+      "description": "Le schede di oggi mostrano la struttura. Si sostituiscono quando ogni organizzazione conferma le proprie informazioni.",
+      "cta": "Rivedi i fornitori"
+    }
+  }
+}

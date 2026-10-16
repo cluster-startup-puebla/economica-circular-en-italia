@@ -1,0 +1,32 @@
+{
+  "Nav": {
+    "label": "Navigazione principale",
+    "home": "Home",
+    "mark": "Messico sostenibile",
+    "markLine": "in Italia",
+    "companies": "Imprese",
+    "ecosystem": "Ecosistema",
+    "providers": "Fornitori",
+    "open": "Apri menu",
+    "close": "Chiudi menu",
+    "skipToContent": "Vai al contenuto",
+    "themeToDark": "Attiva la modalità scura",
+    "themeToLight": "Attiva la modalità chiara",
+    "language": "Lingua"
+  },
+  "Footer": {
+    "name": "Messico sostenibile in Italia",
+    "tagline": "Un ponte tra l'offerta messicana sostenibile e il mercato italiano.",
+    "links": "Pagine",
+    "home": "Home",
+    "companies": "Imprese",
+    "ecosystem": "Ecosistema",
+    "providers": "Fornitori",
+    "note": "Struttura iniziale. Ogni scheda si pubblica quando l'organizzazione conferma i propri dati."
+  },
+  "NotFound": {
+    "title": "Questa pagina non è nel sito",
+    "description": "Le pagine fisse sono home, imprese, ecosistema e fornitori.",
+    "cta": "Torna alla home"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "Home": {
+    "metaTitle": "México Sustentable en Italia",
+    "metaDescription": "Puente entre empresas mexicanas sustentables y el mercado italiano. Empresas, ecosistema y proveedores en un mismo sitio.",
+    "hero": {
+      "eyebrow": "México · Italia",
+      "title": "México sustentable, con puerta en Italia",
+      "description": "Un punto de encuentro para empresas mexicanas que producen con criterio ambiental y para quienes, en Italia, compran, distribuyen o acompañan ese aterrizaje.",
+      "primaryCta": "Ver empresas",
+      "secondaryCta": "Conocer el ecosistema",
+      "mapLabel": "Mapa de México con Puebla en el color de la plataforma"
+    },
+    "allies": {
+      "label": "Innovación social, ambiental y tecnológica",
+      "note": "El Clúster de Plásticos es el sitio y la misión comercial, e invita al Clúster de Startups.",
+      "plastics": "Clúster de Plásticos y Economía Circular",
+      "startups": "Clúster de Startups e Innovación"
+    },
+    "paths": {
+      "eyebrow": "Por dónde entrar",
+      "title": "Tres puertas del mismo puente",
+      "companiesTitle": "Empresas",
+      "companiesDescription": "La oferta mexicana sustentable que quiere presentarse en Italia.",
+      "companiesLink": "Ver empresas",
+      "ecosystemTitle": "Ecosistema",
+      "ecosystemDescription": "La industria articulada de Puebla: los clústeres que la organizan.",
+      "ecosystemLink": "Ver ecosistema",
+      "providersTitle": "Proveedores",
+      "providersDescription": "Servicios para aterrizar: legal, logística, idioma y distribución.",
+      "providersLink": "Ver proveedores"
+    },
+    "bridge": {
+      "eyebrow": "Cómo se recorre",
+      "title": "De la ficha mexicana al mercado italiano",
+      "steps": [
+        {
+          "title": "La empresa se presenta",
+          "description": "Producto, origen y práctica sustentable, en español, inglés e italiano."
+        },
+        {
+          "title": "El ecosistema abre la relación",
+          "description": "Cámaras, instituciones y aliados conectan la oferta con quien compra o acompaña en Italia."
+        },
+        {
+          "title": "El proveedor hace operable el cruce",
+          "description": "Trámites, logística, idioma y distribución para que el aterrizaje no se quede en una intención."
+        }
+      ]
+    },
+    "closing": {
+      "title": "El padrón se arma con datos confirmados",
+      "description": "Las fichas que ves hoy son ejemplos de estructura. Se reemplazan cuando cada organización confirme su información.",
+      "cta": "Revisar proveedores"
+    }
+  }
+}

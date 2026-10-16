@@ -1,0 +1,56 @@
+{
+  "Home": {
+    "metaTitle": "Sustainable Mexico in Italy",
+    "metaDescription": "A bridge between sustainable Mexican companies and the Italian market. Companies, ecosystem, and providers on one site.",
+    "hero": {
+      "eyebrow": "Mexico · Italy",
+      "title": "Sustainable Mexico, with a door into Italy",
+      "description": "A meeting point for Mexican companies that produce with an environmental standard, and for those in Italy who buy, distribute, or support that landing.",
+      "primaryCta": "See companies",
+      "secondaryCta": "Explore the ecosystem",
+      "mapLabel": "Map of Mexico with Puebla in the platform color"
+    },
+    "allies": {
+      "label": "Social, environmental, and technological innovation",
+      "note": "The Plastics Cluster is the site and the commercial mission, and it invites the Startups Cluster.",
+      "plastics": "Plastics and Circular Economy Cluster",
+      "startups": "Startup and Innovation Cluster"
+    },
+    "paths": {
+      "eyebrow": "Where to start",
+      "title": "Three doors of the same bridge",
+      "companiesTitle": "Companies",
+      "companiesDescription": "Sustainable Mexican supply ready to be introduced in Italy.",
+      "companiesLink": "See companies",
+      "ecosystemTitle": "Ecosystem",
+      "ecosystemDescription": "Puebla's articulated industry: the clusters that organize it.",
+      "ecosystemLink": "See the ecosystem",
+      "providersTitle": "Providers",
+      "providersDescription": "Landing services: legal, logistics, language, and distribution.",
+      "providersLink": "See providers"
+    },
+    "bridge": {
+      "eyebrow": "How it works",
+      "title": "From a Mexican profile to the Italian market",
+      "steps": [
+        {
+          "title": "The company introduces itself",
+          "description": "Product, origin, and sustainable practice, in Spanish, English, and Italian."
+        },
+        {
+          "title": "The ecosystem opens the relationship",
+          "description": "Chambers, institutions, and allies connect supply with buyers and partners in Italy."
+        },
+        {
+          "title": "Providers make the crossing operable",
+          "description": "Paperwork, logistics, language, and distribution so the landing does not stay an intention."
+        }
+      ]
+    },
+    "closing": {
+      "title": "The directory is built from confirmed details",
+      "description": "The profiles you see today show the structure. They are replaced once each organization confirms its information.",
+      "cta": "Review providers"
+    }
+  }
+}

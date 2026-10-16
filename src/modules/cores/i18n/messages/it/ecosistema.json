@@ -1,0 +1,50 @@
+{
+  "Ecosystem": {
+    "metaTitle": "Ecosistema",
+    "metaDescription": "Puebla ha un'industria articolata in tre tavoli: trasformazione, servizi e turismo.",
+    "eyebrow": "Puebla, Messico",
+    "mapLabel": "Mappa del Messico con Puebla in evidenza",
+    "title": "Ecosistema",
+    "description": "In Messico, Puebla ha un'industria articolata. Questi cluster sono quell'articolazione, riuniti in tre tavoli: trasformazione, servizi e turismo.",
+    "groups": {
+      "turismo": {
+        "title": "Turismo",
+        "description": "Chi accoglie la visita: città, salute, ospitalità e le montagne."
+      },
+      "transformacion": {
+        "title": "Trasformazione",
+        "description": "Chi trasforma la materia in prodotto: plastica, auto, tessile, alimenti, energia, pietra, legno, chimica, metallo e costruzione."
+      },
+      "servicios": {
+        "title": "Servizi",
+        "description": "Startup, talento, tecnologia ed economia creativa."
+      }
+    },
+    "support": "Con il sostegno di",
+    "government": "Governo di Puebla",
+    "sedetra": "Segreteria allo sviluppo economico e al turismo",
+    "search": "Cerca per cluster, ragione sociale o sede",
+    "count": "{count, plural, one {# cluster} other {# cluster}}",
+    "empty": "Nessun cluster corrisponde a questa ricerca.",
+    "view": "Vedi la scheda",
+    "puebla": "Puebla",
+    "back": "Torna all'ecosistema",
+    "address": "Sede",
+    "legalName": "Ragione sociale",
+    "website": "Sito",
+    "socials": "Social",
+    "contacts": "Contatti",
+    "pending": "In attesa di conferma",
+    "status": {
+      "Constituido": "Costituito",
+      "No constituido": "Non costituito",
+      "Por confirmar": "Da confermare"
+    },
+    "roles": {
+      "Presidente": "Presidente",
+      "Cluster Manager": "Cluster manager",
+      "Vicepresidente": "Vicepresidente",
+      "Secretario": "Segretario"
+    }
+  }
+}

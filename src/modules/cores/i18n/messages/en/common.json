@@ -1,0 +1,32 @@
+{
+  "Nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "mark": "Sustainable Mexico",
+    "markLine": "in Italy",
+    "companies": "Companies",
+    "ecosystem": "Ecosystem",
+    "providers": "Providers",
+    "open": "Open menu",
+    "close": "Close menu",
+    "skipToContent": "Skip to content",
+    "themeToDark": "Switch to dark mode",
+    "themeToLight": "Switch to light mode",
+    "language": "Language"
+  },
+  "Footer": {
+    "name": "Sustainable Mexico in Italy",
+    "tagline": "A bridge between sustainable Mexican supply and the Italian market.",
+    "links": "Pages",
+    "home": "Home",
+    "companies": "Companies",
+    "ecosystem": "Ecosystem",
+    "providers": "Providers",
+    "note": "Initial structure. Each profile is published once the organization confirms its details."
+  },
+  "NotFound": {
+    "title": "That page is not on this site",
+    "description": "The fixed pages are home, companies, ecosystem, and providers.",
+    "cta": "Back to home"
+  }
+}

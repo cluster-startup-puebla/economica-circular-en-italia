@@ -1,0 +1,13 @@
+{
+  "Companies": {
+    "metaTitle": "Empresas",
+    "metaDescription": "Directorio de empresas mexicanas sustentables que buscan presentarse en Italia.",
+    "eyebrow": "Oferta mexicana",
+    "title": "Empresas",
+    "description": "Aquí vive la oferta: empresas mexicanas con una práctica sustentable que quieren cruzar hacia Italia. Las fichas de ejemplo marcan la estructura; el nombre real entra cuando la empresa lo confirma.",
+    "search": "Buscar por nombre, sector o región",
+    "example": "Ejemplo",
+    "empty": "Ninguna ficha coincide con esa búsqueda.",
+    "count": "{count, plural, one {# ficha} other {# fichas}}"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "mark": "México Sustentable",
+    "markLine": "en Italia",
+    "companies": "Empresas",
+    "ecosystem": "Ecosistema",
+    "providers": "Proveedores",
+    "open": "Abrir menú",
+    "close": "Cerrar menú",
+    "skipToContent": "Saltar al contenido",
+    "themeToDark": "Activar modo oscuro",
+    "themeToLight": "Activar modo claro",
+    "language": "Idioma"
+  },
+  "Footer": {
+    "name": "México Sustentable en Italia",
+    "tagline": "Puente entre la oferta mexicana sustentable y el mercado italiano.",
+    "links": "Páginas",
+    "home": "Inicio",
+    "companies": "Empresas",
+    "ecosystem": "Ecosistema",
+    "providers": "Proveedores",
+    "note": "Estructura inicial. Cada ficha se publica cuando la organización confirma sus datos."
+  },
+  "NotFound": {
+    "title": "Esa página no está en el sitio",
+    "description": "Las páginas fijas son inicio, empresas, ecosistema y proveedores.",
+    "cta": "Volver al inicio"
+  }
+}

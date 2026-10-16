@@ -1,0 +1,13 @@
+{
+  "Companies": {
+    "metaTitle": "Imprese",
+    "metaDescription": "Elenco di imprese messicane sostenibili che vogliono presentarsi in Italia.",
+    "eyebrow": "Offerta messicana",
+    "title": "Imprese",
+    "description": "Qui vive l'offerta: imprese messicane con una pratica sostenibile che vogliono arrivare in Italia. Le schede di esempio mostrano la struttura; il nome reale entra quando l'impresa lo conferma.",
+    "search": "Cerca per nome, settore o regione",
+    "example": "Esempio",
+    "empty": "Nessuna scheda corrisponde a questa ricerca.",
+    "count": "{count, plural, one {# scheda} other {# schede}}"
+  }
+}

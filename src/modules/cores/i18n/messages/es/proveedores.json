@@ -1,0 +1,13 @@
+{
+  "Providers": {
+    "metaTitle": "Proveedores",
+    "metaDescription": "Servicios que hacen operable el aterrizaje de empresas mexicanas sustentables en Italia.",
+    "eyebrow": "Aterrizaje",
+    "title": "Proveedores",
+    "description": "Quienes vuelven operable el cruce: legal, logística, idioma y distribución. Igual que en empresas, la ficha de ejemplo se sustituye cuando el proveedor confirma sus datos.",
+    "search": "Buscar por nombre, servicio o cobertura",
+    "example": "Ejemplo",
+    "empty": "Ningún proveedor coincide con esa búsqueda.",
+    "count": "{count, plural, one {# proveedor} other {# proveedores}}"
+  }
+}

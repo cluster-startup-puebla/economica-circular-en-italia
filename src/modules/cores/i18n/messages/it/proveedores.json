@@ -1,0 +1,13 @@
+{
+  "Providers": {
+    "metaTitle": "Fornitori",
+    "metaDescription": "Servizi che rendono operativo l'arrivo in Italia di imprese messicane sostenibili.",
+    "eyebrow": "Arrivo",
+    "title": "Fornitori",
+    "description": "Chi rende operativo il passaggio: legale, logistica, lingua e distribuzione. Come per le imprese, la scheda di esempio si sostituisce quando il fornitore conferma i propri dati.",
+    "search": "Cerca per nome, servizio o copertura",
+    "example": "Esempio",
+    "empty": "Nessun fornitore corrisponde a questa ricerca.",
+    "count": "{count, plural, one {# fornitore} other {# fornitori}}"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Ecosystem": {
+    "metaTitle": "Ecosistema",
+    "metaDescription": "Puebla tiene una industria articulada en tres mesas: transformación, servicios y turismo.",
+    "eyebrow": "Puebla, México",
+    "mapLabel": "Mapa de México con Puebla resaltada",
+    "title": "Ecosistema",
+    "description": "En México, Puebla tiene una industria articulada. Estos clústeres son esa articulación, reunidos en tres mesas: transformación, servicios y turismo.",
+    "groups": {
+      "turismo": {
+        "title": "Turismo",
+        "description": "Quienes reciben la visita: ciudad, salud, hospitalidad y las sierras."
+      },
+      "transformacion": {
+        "title": "Transformación",
+        "description": "Quienes convierten materia en producto: plástico, auto, textil, alimentos, energía, piedra, madera, química, metal y construcción."
+      },
+      "servicios": {
+        "title": "Servicios",
+        "description": "Startups, talento, tecnología y economía creativa."
+      }
+    },
+    "support": "Con el apoyo de",
+    "government": "Gobierno de Puebla",
+    "sedetra": "Secretaría de Desarrollo Económico y Turismo",
+    "search": "Buscar por clúster, razón social o sede",
+    "count": "{count, plural, one {# clúster} other {# clústeres}}",
+    "empty": "Ningún clúster coincide con esa búsqueda.",
+    "view": "Ver ficha",
+    "puebla": "Puebla",
+    "back": "Volver al ecosistema",
+    "address": "Sede",
+    "legalName": "Razón social",
+    "website": "Sitio",
+    "socials": "Redes",
+    "contacts": "Contactos",
+    "pending": "Pendiente de confirmar",
+    "status": {
+      "Constituido": "Constituido",
+      "No constituido": "No constituido",
+      "Por confirmar": "Por confirmar"
+    },
+    "roles": {
+      "Presidente": "Presidente",
+      "Cluster Manager": "Cluster manager",
+      "Vicepresidente": "Vicepresidente",
+      "Secretario": "Secretario"
+    }
+  }
+}

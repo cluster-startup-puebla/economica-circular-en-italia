@@ -1,0 +1,13 @@
+{
+  "Providers": {
+    "metaTitle": "Providers",
+    "metaDescription": "Services that make a sustainable Mexican company's landing in Italy operable.",
+    "eyebrow": "Landing",
+    "title": "Providers",
+    "description": "The people who make the crossing operable: legal, logistics, language, and distribution. As with companies, an example profile is replaced once the provider confirms its details.",
+    "search": "Search by name, service, or coverage",
+    "example": "Example",
+    "empty": "No provider matches that search.",
+    "count": "{count, plural, one {# provider} other {# providers}}"
+  }
+}

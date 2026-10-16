@@ -1,0 +1,337 @@
+[
+  {
+    "id": 1,
+    "name": "Cluster Turístico de Puebla",
+    "legalName": "Cluster Turístico y Asociación de Empresarios del Centro Histórico de Puebla AC",
+    "logo": "/clusters/cluster-01-turistico-puebla.png",
+    "website": "barriandopuebla.com",
+    "status": "Constituido",
+    "address": "5 oriente 612, Centro, Puebla",
+    "socials": [
+      "facebook.com/BarriandoPue",
+      "twitter.com/barriandopuebla",
+      "instagram.com/barriando_puebla"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Alexander Rafael Gehrke Sánchez", "phone": "222 199 5848", "email": "gehrke@live.com.mx" },
+      { "role": "Cluster Manager", "name": "Georgina Vigueras", "phone": "221 524 5087", "email": "direccion@barriandopuebla.com" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "CLAUZ",
+    "legalName": "Clúster Automotriz de Puebla y Tlaxcala",
+    "logo": "/clusters/cluster-02-clauz.jpg",
+    "website": "clauz.mx",
+    "status": "Constituido",
+    "address": "Landing Empresarial CCU BUAP",
+    "socials": [
+      "linkedin.com/company/clauz",
+      "twitter.com/clauz_mx",
+      "instagram.com/clauzmx"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Jesús Rascón Celma (al 30 de mayo)", "phone": "", "email": "" },
+      { "role": "Cluster Manager", "name": "Mónica Doger (Directora General) / Annia Llerenas (Gerencia Proveedores y ESG)", "phone": "222 212 8301", "email": "gerenciaproveedores@gmail.com" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Educación y Desarrollo del Talento",
+    "legalName": "Cluster de Educación y Desarrollo de Talento de Puebla, A.C.",
+    "logo": "/clusters/cluster-03-educacion-talento.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "",
+    "socials": [
+      "facebook.com/EduClusterPuebla",
+      "linkedin.com/company/educlusterpuebla",
+      "twitter.com/EduClusterPue"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Denise Costes Intriago", "phone": "222 481 5380", "email": "denise@icum.edu.mx" },
+      { "role": "Cluster Manager", "name": "Ana Lilia Barbosa Villaseñor", "phone": "222 162 7455", "email": "cluster.educacion.puebla@gmail.com" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Clúster de Tecnologías y Servicios Empresariales",
+    "legalName": "Clúster Puebla TIC AC",
+    "logo": "/clusters/cluster-04-tic.gif",
+    "website": "clusterpueblatic.mx",
+    "status": "Constituido",
+    "address": "Lateral Vía Atlixcáyotl 6514 P1, San Andrés Cholula, Puebla",
+    "socials": [
+      "linkedin.com/company/clusterpueblatic",
+      "facebook.com/clusterpueblatic",
+      "twitter.com/clusterpuetic"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Manuel Alberto Pérez Coutiño", "phone": "222 210 4150", "email": "presidencia@clusterpueblatic.mx" },
+      { "role": "Cluster Manager", "name": "Tere Lima", "phone": "222 465 9277", "email": "direccion@clusterpueblatic.mx" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Clúster iTEXCON",
+    "legalName": "Clúster de la Industria Textil y de la Confección iTEXCON",
+    "logo": "/clusters/cluster-05-itexcon.png",
+    "website": "itexcon.com.mx",
+    "status": "Constituido",
+    "address": "C. 11 Sur 2104, Centro histórico, 72420 Puebla",
+    "socials": [
+      "facebook.com/itexcon",
+      "x.com/ClusterItexcon",
+      "instagram.com/clusteritexcon",
+      "linkedin.com/company/cluster-itexcon"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Carlos Couttolenc López", "phone": "222 123 6564", "email": "ccouttolenc@textileslalibertad.com" },
+      { "role": "Cluster Manager", "name": "Claudia Sánchez Regules", "phone": "222 565 9631", "email": "direccion@itexcon.com.mx" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Agroalimentario de Puebla",
+    "legalName": "Clúster de Productores Agro-Alimentarios de Puebla A.C.",
+    "logo": "/clusters/cluster-06-agroalimentario.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "Calle 16 Nte. 110, Segunda Secc, 75560 Esperanza, Pue.",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Francisco Álvarez Laso", "phone": "", "email": "alvarez7377@hotmail.com" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Energético Poblano",
+    "legalName": "Cluster Energético de Puebla A.C.",
+    "logo": "/clusters/cluster-07-energetico.jpg",
+    "website": "clusterenergeticopuebla.com",
+    "status": "Constituido",
+    "address": "Paseo Ópera 9 int. 204, segundo piso, Lomas de Angelópolis, 72830 Puebla",
+    "socials": [
+      "twitter.com/clusterepuebla",
+      "linkedin.com/company/clusterenergetico"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Ing. Sergio Zugasti", "phone": "222 304 6078", "email": "presidencia@clusterenergeticopuebla.com" },
+      { "role": "Cluster Manager", "name": "Ing. Valeria Mirón León", "phone": "244 112 3614", "email": "info@clusternergeticopuebla.com" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Turismo Médico",
+    "legalName": "Clúster de Turismo Médico de Puebla, A.C.",
+    "logo": "/clusters/cluster-08-pueblacare.png",
+    "website": "pueblacare.com",
+    "status": "Constituido",
+    "address": "Av. Kepler 2143, Reserva Territorial Atlixcáyotl, San Andrés Cholula, CP 72810",
+    "socials": [
+      "https://www.facebook.com/pueblacare",
+      "https://www.instagram.com/pueblacare/"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Lic. Sergio I. Juárez Martínez", "phone": "221 349 1439", "email": "presidencia@pueblacare.com" },
+      { "role": "Cluster Manager", "name": "Yunuen Vázquez Zamora", "phone": "222 128 1685", "email": "direccion@pueblacare.com" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Mezcal y Agave",
+    "legalName": "Clúster de Agave del Estado de Puebla",
+    "logo": "/clusters/cluster-09-mezcal-agave.png",
+    "website": "concytep.gob.mx",
+    "status": "Constituido",
+    "address": "Santiago Coatepec, 75896 Coatepec, Pue.",
+    "socials": ["facebook.com/clusteragaveuttehuacan"],
+    "contacts": [
+      { "role": "Presidente", "name": "Alondra Dorely Meza Hernández", "phone": "238 163 0739", "email": "mezcal60fierros@gmail.com" },
+      { "role": "Cluster Manager", "name": "Elvira Rodríguez Marcos", "phone": "233 103 0673", "email": "clusterdeagavedelestadodepuebl@gmail.com" }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Mármol y Ónix",
+    "legalName": "No constituido (confirmado)",
+    "logo": "/clusters/cluster-10-marmol-onix.png",
+    "website": "",
+    "status": "No constituido",
+    "address": "Carretera Tecali-Tepeaca km 2.5, No. Ext. 5020, Tecali de Herrera, 75254 Puebla",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Álvaro Flores", "phone": "", "email": "floresalvaromc@gmail.com" }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Industria del Mueble y la Madera",
+    "legalName": "Clúster Industrial del Mueble y Madera de Puebla",
+    "logo": "/clusters/cluster-11-mueble-madera.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "Km 12.5 Carretera Federal Puebla-Atlixco, Chipilo, Puebla, CP 74325",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Miguel Ángel Cagigal Zorrilla", "phone": "222 614 0719", "email": "mcagigal@hotmail.com" },
+      { "role": "Cluster Manager", "name": "Oscar García Gómez", "phone": "222 714 7266", "email": "g.gomezoscar@gmail.com" }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Hospitalidad de Atlixco",
+    "legalName": "Clúster del Valle de Atlixco, A.C.",
+    "logo": "/clusters/cluster-12-atlixco.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "Paseo del Cristo 1292 local 5, Club de Golf El Cristo, Atlixco, CP 74293",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "María Laura del Rocío Huerta Ortega", "phone": "222 364 9139", "email": "mlrh2010@hotmail.com" },
+      { "role": "Cluster Manager", "name": "Claudia Betanzos Hernández", "phone": "222 530 0199", "email": "claudiabetanzos@gmail.com" }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Turismo, Innovación y Tradición Cholula",
+    "legalName": "Cluster Económico, Cultural y Turístico de Cholula A.C.",
+    "logo": "/clusters/cluster-13-cholula.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "José Gregorio Porras Vázquez", "phone": "222 413 8286", "email": "lalunita.facturacion@outlook.es" },
+      { "role": "Cluster Manager", "name": "José Raúl Angulo Arriaga", "phone": "221 206 2895", "email": "raul.angulo@live.com" }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hospitalidad de Xicotepec",
+    "legalName": "Clúster Sierra Norte de Puebla Xicotepec-Huauchinango A.C.",
+    "logo": "/clusters/cluster-14-xicotepec.jpg",
+    "website": "",
+    "status": "Constituido",
+    "address": "",
+    "socials": ["facebook.com/ClusterSNP"],
+    "contacts": [
+      { "role": "Cluster Manager", "name": "Nayeli Olivares Vargas", "phone": "", "email": "naye.olivares26@gmail.com" }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Industria Química Farmacéutica",
+    "legalName": "Clúster de Química para la Industria Poblana",
+    "logo": "/clusters/cluster-15-quimica-farmaceutica.jpg",
+    "website": "",
+    "status": "Constituido",
+    "address": "Calle 24 Poniente 3503-5, Col. Valle Dorado, Puebla",
+    "socials": ["facebook.com/profile.php?id=61563151139561"],
+    "contacts": [
+      { "role": "Presidente", "name": "Ing. José Ignacio Rojas González", "phone": "222 249 4195", "email": "apiq.puebla@gmail.com" },
+      { "role": "Cluster Manager", "name": "Ing. Mariana Vázquez Ramírez", "phone": "222 465 1905", "email": "" }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Industria Metalmecánica",
+    "legalName": "Metalclus Puebla A.C.",
+    "logo": "/clusters/cluster-16-metalmecanica.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "Tetela 30, La Paz, 72160 Puebla",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Horacio Peredo Elguero", "phone": "222 813 7404", "email": "hperedo.direccionoperaciones@servmetal.xyz" },
+      { "role": "Vicepresidente", "name": "Carlos Fernández Suárez", "phone": "222 238 5280", "email": "carlos@temsa.com.mx" },
+      { "role": "Cluster Manager", "name": "Luis Estefan Castaneyra", "phone": "222 451 7042", "email": "castaneyra95@hotmail.com" }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Industria Construcción",
+    "legalName": "No constituido (confirmado)",
+    "logo": "/clusters/cluster-17-construccion.jpg",
+    "website": "",
+    "status": "No constituido",
+    "address": "Av. 25 Ote. 215, El Carmen, 72530 Puebla",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Alberto Ramírez y Ramírez", "phone": "", "email": "aramirez@rmzarquitectos.com.mx" }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Clúster de Plásticos y Economía Circular",
+    "legalName": "Clúster Poblano de la Industria del Plástico",
+    "logo": "/clusters/cluster-18-plasticos.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "34 Nte. 1030, Col. Humboldt",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Silvia Ávila", "phone": "331 526 7828", "email": "clusterplasticos@gmail.com" },
+      { "role": "Cluster Manager", "name": "Diana Corona", "phone": "221 164 3969", "email": "" }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Economía Creativa",
+    "legalName": "SUBCOMIN A.C.",
+    "logo": "/clusters/cluster-19-economia-creativa.jpg",
+    "website": "creapuebla.org",
+    "status": "Constituido",
+    "address": "",
+    "socials": [
+      "linkedin.com/company/crea-puebla",
+      "facebook.com/profile.php?id=61558072396223"
+    ],
+    "contacts": [
+      { "role": "Presidente", "name": "Roberto Quintero Vega", "phone": "222 322 8848", "email": "" },
+      { "role": "Cluster Manager", "name": "Yoalli González Huerta", "phone": "222 525 0978", "email": "yoalligonzalez@creapuebla.org" }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Innovación y Experiencias Turísticas Chignahuapan-Zacatlán",
+    "legalName": "Innovación y Experiencias Turísticas Chignahuapan-Zacatlán A.C.",
+    "logo": "/clusters/cluster-20-chignahuapan-zacatlan.png",
+    "website": "",
+    "status": "Constituido",
+    "address": "Andador Juárez 5, Centro, 73310 Santa Julia, Pue.",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Maru Fernández", "phone": "797 122 5007", "email": "" },
+      { "role": "Cluster Manager", "name": "Eirick Rodríguez", "phone": "55 3566 4076", "email": "clusterzacatlanchignahuapan@gmail.com" }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Clúster Turístico Sierra Nororiental",
+    "legalName": "Clúster Turístico Regional de Montaña y Niebla de la Sierra Nororiental, A.C.",
+    "logo": "/clusters/cluster-21-sierra-nororiental.png",
+    "website": "sierranororiental.com.mx",
+    "status": "Constituido",
+    "address": "Teziutlán",
+    "socials": ["facebook.com/clusterturisticosierranororiental"],
+    "contacts": [
+      { "role": "Presidente", "name": "Litva María Lazaneo Molina", "phone": "231 103 8403", "email": "litlaz@hotmail.com" },
+      { "role": "Secretario", "name": "Adrián Martínez Román", "phone": "231 116 7800", "email": "cocinamarquesa84@gmail.com" }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Clúster de Startups e Innovación",
+    "legalName": "Clúster de Startups e Innovación (CSI) A.C.",
+    "logo": "/clusters/cluster-startups.webp",
+    "website": "",
+    "status": "Constituido",
+    "address": "",
+    "socials": [],
+    "contacts": [
+      { "role": "Presidente", "name": "Yamil Álvarez", "phone": "222 189 6400", "email": "" },
+      { "role": "Cluster Manager", "name": "Álvaro Castillo", "phone": "221 240 1587", "email": "hola@alvarocastillo.dev" }
+    ]
+  }
+]
