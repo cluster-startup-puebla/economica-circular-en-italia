@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { COMPANY_INDUSTRIES, companies, getCompany } from "@/data/companies";
 import { Link, routing } from "@/modules/cores/i18n/src/config/routing";
 import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface";
+import { companyOgImage } from "@/modules/cores/site/src/config/site";
 import { buildMetadata } from "@/modules/cores/site/src/services/page-metadata";
 
 export function generateStaticParams() {
@@ -26,6 +27,7 @@ export async function generateMetadata({
     route: `/empresas/${company.slug}`,
     title: company.name,
     description: company.summary[locale as Locale] ?? company.summary.es,
+    image: companyOgImage(company.slug),
   });
 }
 

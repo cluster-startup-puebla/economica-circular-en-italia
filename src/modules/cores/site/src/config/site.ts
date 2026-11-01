@@ -32,6 +32,16 @@ export const OG_IMAGE = {
   alt: SITE_NAME,
 } as const;
 
+/** Company share image: the landscape in OG_IMAGE with that company's logo on a plate. */
+export function companyOgImage(slug: string) {
+  return {
+    url: `/og/empresas/${slug}.jpg`,
+    width: OG_IMAGE.width,
+    height: OG_IMAGE.height,
+    type: OG_IMAGE.type,
+  } as const;
+}
+
 /** Absolute localized URL with the trailing slash `trailingSlash: true` expects. */
 export function localeUrl(locale: string, route = "/") {
   const bare = route === "/" || route === "" ? "" : route.replace(/\/$/, "");
