@@ -43,7 +43,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       />
       <Allies
         label={t("allies.label")}
-        note={t("allies.note")}
         plasticsAlt={t("allies.plastics")}
         startupsAlt={t("allies.startups")}
       />
