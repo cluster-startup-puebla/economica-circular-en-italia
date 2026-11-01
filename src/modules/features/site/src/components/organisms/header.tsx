@@ -15,6 +15,9 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [condensed, setCondensed] = useState(false);
 
+  const onHome = pathname === "/";
+  const clear = onHome && !condensed && !open;
+
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(`${href}/`);
@@ -50,17 +53,21 @@ export function Header() {
       </a>
 
       <header
-        className={`sticky top-0 z-50 transition-[padding] duration-300 ease-out motion-reduce:transition-none ${
-          condensed
-            ? "px-3 pt-[max(0.5rem,env(safe-area-inset-top))] sm:px-4 sm:pt-[max(0.75rem,env(safe-area-inset-top))]"
-            : "px-0 pt-[env(safe-area-inset-top)]"
+        className={`sticky top-0 z-50 transition-[padding,background-color,border-color] duration-300 ease-out motion-reduce:transition-none ${
+          clear
+            ? "bg-transparent px-0 pt-[env(safe-area-inset-top)]"
+            : condensed
+              ? "px-3 pt-[max(0.5rem,env(safe-area-inset-top))] sm:px-4 sm:pt-[max(0.75rem,env(safe-area-inset-top))]"
+              : "px-0 pt-[env(safe-area-inset-top)]"
         }`}
       >
         <div
           className={`mx-auto transition-all duration-300 ease-out motion-reduce:transition-none ${
-            condensed
-              ? "max-w-4xl rounded-full border border-line bg-surface/90 shadow-md backdrop-blur-md"
-              : "max-w-none border-b border-line bg-surface/90 backdrop-blur-md"
+            clear
+              ? "max-w-none border-transparent bg-transparent"
+              : condensed
+                ? "max-w-4xl rounded-full border border-line bg-surface/90 shadow-md backdrop-blur-md"
+                : "max-w-none border-b border-line bg-surface/90 backdrop-blur-md"
           }`}
         >
           <div
@@ -80,7 +87,7 @@ export function Header() {
                       href={item.href}
                       aria-current={isActive(item.href) ? "page" : undefined}
                       className={`inline-flex min-h-11 items-center text-small transition ${
-                        isActive(item.href) ? "font-semibold text-brand" : "text-ink-secondary hover:text-accent"
+                        isActive(item.href) ? "font-semibold text-accent" : "text-ink-secondary hover:text-accent"
                       }`}
                     >
                       {t(item.key)}
@@ -119,7 +126,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={`flex min-h-11 items-center text-body transition ${
-                      isActive(item.href) ? "font-semibold text-brand" : "text-ink-secondary"
+                      isActive(item.href) ? "font-semibold text-accent" : "text-ink-secondary"
                     }`}
                     onClick={() => setOpen(false)}
                   >
