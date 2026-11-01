@@ -2,7 +2,20 @@ import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface"
 
 export const SITE_NAME = "México Sustentable en Italia";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+function resolveSiteUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (explicit) return explicit;
+
+  const production = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (production) return `https://${production}`;
+
+  const deployment = process.env.VERCEL_URL;
+  if (deployment) return `https://${deployment}`;
+
+  return "http://localhost:3000";
+}
+
+export const SITE_URL = resolveSiteUrl();
 
 export const OG_LOCALE: Record<Locale, string> = {
   es: "es_MX",
@@ -10,12 +23,12 @@ export const OG_LOCALE: Record<Locale, string> = {
   it: "it_IT",
 };
 
-/** Desktop hero. Used as the share image on every page. */
+/** Share image. JPEG, because WhatsApp does not preview WebP. */
 export const OG_IMAGE = {
-  url: "/hero/landscape-1920.webp",
-  width: 1920,
-  height: 1073,
-  type: "image/webp",
+  url: "/og.jpg",
+  width: 1200,
+  height: 630,
+  type: "image/jpeg",
   alt: SITE_NAME,
 } as const;
 

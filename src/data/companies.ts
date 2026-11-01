@@ -2,12 +2,13 @@ import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface"
 
 export type LocalizedText = Record<Locale, string>;
 
-export type CompanyIndustry = "edtech" | "hrtech" | "software";
+export type CompanyIndustry = "edtech" | "hrtech" | "software" | "recycling";
 
 export const COMPANY_INDUSTRIES: Record<CompanyIndustry, LocalizedText> = {
   edtech: { es: "Edtech", en: "Edtech", it: "Edtech" },
   hrtech: { es: "HR Tech", en: "HR Tech", it: "HR Tech" },
   software: { es: "Software", en: "Software", it: "Software" },
+  recycling: { es: "Reciclaje", en: "Recycling", it: "Riciclo" },
 };
 
 /** Clúster del que sale la empresa. El sello va chiquito en la ficha. */
@@ -25,6 +26,16 @@ export const STARTUPS_CLUSTER: CompanyCluster = {
     it: "Cluster di startup e innovazione",
   },
   logo: "/clusters/cluster-startups.webp",
+};
+
+export const PLASTICS_CLUSTER: CompanyCluster = {
+  id: "plasticos",
+  name: {
+    es: "Clúster de Plásticos y Economía Circular",
+    en: "Plastics and Circular Economy Cluster",
+    it: "Cluster di plastiche ed economia circolare",
+  },
+  logo: "/clusters/cluster-18-plasticos.png",
 };
 
 export type Company = {
@@ -48,7 +59,7 @@ export type Company = {
   };
 };
 
-export const companies: readonly Company[] = [
+const COMPANY_LIST: readonly Company[] = [
   {
     slug: "concora",
     name: "Concora",
@@ -136,7 +147,49 @@ export const companies: readonly Company[] = [
       phone: "221 240 1587",
     },
   },
+  {
+    slug: "comere",
+    name: "COMERE",
+    logo: "/empresas/comere.webp",
+    cluster: PLASTICS_CLUSTER,
+    region: {
+      es: "Puebla y Guadalajara, México",
+      en: "Puebla and Guadalajara, Mexico",
+      it: "Puebla e Guadalajara, Messico",
+    },
+    summary: {
+      es: "Compra, recicla y vende plásticos, embalaje y metales no ferrosos como materia prima para la industria.",
+      en: "Buys, recycles and sells plastics, packaging and non-ferrous metals as feedstock for industry.",
+      it: "Compra, ricicla e vende plastiche, imballaggi e metalli non ferrosi come materia prima per l'industria.",
+    },
+    industries: ["recycling"],
+    problem: {
+      es: "Quien fabrica con material reciclado necesita abasto parejo. El plástico postconsumo, el embalaje y el scrap de aluminio, cobre o bronce llegan mezclados, y sin una selección estricta esa materia no vuelve a servir para producir.",
+      en: "A manufacturer using recycled material needs a steady supply. Post-consumer plastic, packaging and scrap aluminum, copper or bronze arrive mixed, and without strict sorting that material cannot go back into production.",
+      it: "Chi produce con materiale riciclato ha bisogno di un approvvigionamento costante. La plastica post consumo, gli imballaggi e lo scrap di alluminio, rame o bronzo arrivano mescolati, e senza una selezione rigorosa quella materia non torna utile per produrre.",
+    },
+    solution: {
+      es: "Selecciona y comercializa resinas PCR, plástico postconsumo y postindustrial, residuos de embalaje y metales no ferrosos. El material sale clasificado para que la industria lo use otra vez como materia prima, y capacita a empresas que quieren armar una estrategia de sustentabilidad.",
+      en: "Sorts and sells PCR resins, post-consumer and post-industrial plastic, packaging waste and non-ferrous metals. The material leaves classified so industry can use it again as raw material, and they train companies that want to build a sustainability strategy.",
+      it: "Seleziona e commercializza resine PCR, plastica post consumo e post industriale, rifiuti di imballaggio e metalli non ferrosi. Il materiale esce classificato perché l'industria lo riusi come materia prima, e forma le imprese che vogliono costruire una strategia di sostenibilità.",
+    },
+    contact: {
+      website: "https://comere.com.mx/",
+      email: "contacto@comere.com.mx",
+      phone: "221 408 3253",
+    },
+  },
 ];
+
+/** Plásticos abre el directorio. Dentro de cada grupo, el nombre va en orden alfabético. */
+function compareCompanies(a: Company, b: Company): number {
+  const group = (company: Company) => (company.cluster.id === PLASTICS_CLUSTER.id ? 0 : 1);
+  const byCluster = group(a) - group(b);
+  if (byCluster !== 0) return byCluster;
+  return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+}
+
+export const companies: readonly Company[] = [...COMPANY_LIST].sort(compareCompanies);
 
 export function getCompany(slug: string): Company | null {
   return companies.find((company) => company.slug === slug) ?? null;
