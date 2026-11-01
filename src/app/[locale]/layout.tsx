@@ -5,7 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { routing } from "@/modules/cores/i18n/src/config/routing";
 import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface";
-import { OG_LOCALE, SITE_NAME, SITE_URL } from "@/modules/cores/site/src/config/site";
+import { OG_IMAGE, OG_LOCALE, SITE_NAME, SITE_URL } from "@/modules/cores/site/src/config/site";
 import { Footer } from "@/modules/features/site/src/components/organisms/footer";
 import { Header } from "@/modules/features/site/src/components/organisms/header";
 import { DocumentScripts } from "./document-scripts";
@@ -59,6 +59,15 @@ export async function generateMetadata({
       type: "website",
       siteName: SITE_NAME,
       locale: OG_LOCALE[current],
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      images: [{ ...OG_IMAGE, alt: t("metaTitle") }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      images: [{ ...OG_IMAGE, alt: t("metaTitle") }],
     },
   };
 }
