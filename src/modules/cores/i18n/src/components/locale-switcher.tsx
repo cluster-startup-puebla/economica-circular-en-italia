@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Languages } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { routing, usePathname, useRouter } from "@/modules/cores/i18n/src/config/routing";
 import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface";
@@ -10,6 +10,12 @@ const LOCALE_LABEL: Record<Locale, string> = {
   es: "Español",
   en: "English",
   it: "Italiano",
+};
+
+const LOCALE_CODE: Record<Locale, string> = {
+  es: "MX",
+  en: "EN",
+  it: "IT",
 };
 
 export function LocaleSwitcher() {
@@ -45,21 +51,71 @@ function LocalePills({
       role="group"
       aria-label={label}
     >
-      <Languages size={14} className="text-ink-muted" aria-hidden="true" />
       {routing.locales.map((item) => (
         <button
           key={item}
           type="button"
           onClick={() => onSelect(item)}
           aria-current={item === locale ? "true" : undefined}
-          className={`inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-full px-2.5 uppercase transition ${
+          className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-full px-2.5 uppercase transition ${
             item === locale ? "bg-accent font-semibold text-on-accent" : "text-ink-secondary hover:text-ink"
           }`}
         >
-          {item}
+          <Flag locale={item} />
+          {LOCALE_CODE[item]}
         </button>
       ))}
     </div>
+  );
+}
+
+function Flag({ locale }: { locale: Locale }) {
+  const rawId = useId().replace(/:/g, "");
+
+  return (
+    <span className="inline-flex h-3.5 w-5 shrink-0 overflow-hidden rounded-[2px] ring-1 ring-black/15" aria-hidden="true">
+      {locale === "es" ? <MexicoFlag /> : locale === "it" ? <ItalyFlag /> : <UkFlag clipId={rawId} />}
+    </span>
+  );
+}
+
+function MexicoFlag() {
+  return (
+    <svg viewBox="0 0 21 14" className="h-full w-full">
+      <rect width="7" height="14" fill="#006847" />
+      <rect x="7" width="7" height="14" fill="#ffffff" />
+      <rect x="14" width="7" height="14" fill="#ce1126" />
+      <circle cx="10.5" cy="7" r="1.7" fill="#c4a35a" />
+    </svg>
+  );
+}
+
+function ItalyFlag() {
+  return (
+    <svg viewBox="0 0 21 14" className="h-full w-full">
+      <rect width="7" height="14" fill="#009246" />
+      <rect x="7" width="7" height="14" fill="#ffffff" />
+      <rect x="14" width="7" height="14" fill="#ce2b37" />
+    </svg>
+  );
+}
+
+function UkFlag({ clipId }: { clipId: string }) {
+  return (
+    <svg viewBox="0 0 60 30" className="h-full w-full">
+      <defs>
+        <clipPath id={clipId}>
+          <rect width="60" height="30" />
+        </clipPath>
+      </defs>
+      <g clipPath={`url(#${clipId})`}>
+        <rect width="60" height="30" fill="#012169" />
+        <path d="M0 0 L60 30 M60 0 L0 30" stroke="#ffffff" strokeWidth="8" />
+        <path d="M0 0 L60 30 M60 0 L0 30" stroke="#c8102e" strokeWidth="4" />
+        <path d="M30 0 V30 M0 15 H60" stroke="#ffffff" strokeWidth="14" />
+        <path d="M30 0 V30 M0 15 H60" stroke="#c8102e" strokeWidth="8" />
+      </g>
+    </svg>
   );
 }
 
@@ -101,7 +157,8 @@ function LocaleMenu({
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >
-        {locale}
+        <Flag locale={locale} />
+        {LOCALE_CODE[locale]}
         <ChevronDown size={14} aria-hidden className={`transition ${open ? "rotate-180" : ""}`} />
       </button>
       {open ? (
@@ -126,8 +183,11 @@ function LocaleMenu({
                     if (!selected) onSelect(item);
                   }}
                 >
-                  <span>{LOCALE_LABEL[item]}</span>
-                  <span className="text-micro uppercase text-ink-muted">{item}</span>
+                  <span className="inline-flex items-center gap-2">
+                    <Flag locale={item} />
+                    <span>{LOCALE_LABEL[item]}</span>
+                  </span>
+                  <span className="text-micro uppercase text-ink-muted">{LOCALE_CODE[item]}</span>
                 </button>
               </li>
             );
