@@ -1,0 +1,8 @@
+{
+  "Consent": {
+    "label": "Consentimiento de analítica",
+    "message": "Usamos Microsoft Clarity para entender cómo se usa el sitio.",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  }
+}

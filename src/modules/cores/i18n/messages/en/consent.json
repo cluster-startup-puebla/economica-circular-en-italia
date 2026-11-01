@@ -1,0 +1,8 @@
+{
+  "Consent": {
+    "label": "Analytics consent",
+    "message": "We use Microsoft Clarity to understand how the site is used.",
+    "accept": "Accept",
+    "reject": "Reject"
+  }
+}

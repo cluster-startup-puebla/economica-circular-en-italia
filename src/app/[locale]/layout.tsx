@@ -9,6 +9,7 @@ import { showProviders } from "@/modules/cores/site/src/config/features";
 import { OG_IMAGE, OG_LOCALE, SITE_NAME, SITE_URL } from "@/modules/cores/site/src/config/site";
 import { Footer } from "@/modules/features/site/src/components/organisms/footer";
 import { Header } from "@/modules/features/site/src/components/organisms/header";
+import { ClarityConsent } from "@/modules/cores/analytics/src/components/clarity-consent";
 import { DocumentScripts } from "./document-scripts";
 import "../globals.css";
 
@@ -103,6 +104,7 @@ export default async function LocaleLayout({
               {children}
             </main>
             <Footer />
+            <ClarityConsent />
           </NextIntlClientProvider>
         </div>
       </body>
