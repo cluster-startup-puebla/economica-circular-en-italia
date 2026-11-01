@@ -91,6 +91,50 @@ export default async function CompanyPage({
           </div>
         </div>
 
+        {company.products?.length ? (
+          <section className="card mt-12 p-6">
+            <h2 className="text-micro uppercase tracking-wider text-ink-muted">
+              {t(company.slug === "uep" ? "schools" : "products")}
+            </h2>
+            <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {company.products.map((product) => {
+                const picture = product.image ?? product.logo;
+                const card = (
+                  <>
+                    {picture ? (
+                      <div className="aspect-square overflow-hidden rounded-sm border border-line bg-white">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={picture} alt="" loading="lazy" className="h-full w-full object-contain" />
+                      </div>
+                    ) : null}
+                    <div>
+                      <h3 className="text-body font-semibold text-ink">{product.name}</h3>
+                      <p className="mt-1 text-small text-ink-secondary">{product.summary[lang]}</p>
+                    </div>
+                  </>
+                );
+                const className = "flex h-full flex-col gap-3 rounded-md border border-line bg-surface p-4";
+                return (
+                  <li key={product.slug}>
+                    {product.website ? (
+                      <a
+                        href={product.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${className} transition-colors hover:border-brand`}
+                      >
+                        {card}
+                      </a>
+                    ) : (
+                      <div className={className}>{card}</div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ) : null}
+
         <h2 className="text-micro mt-12 uppercase tracking-wide text-ink-muted">{t("contact")}</h2>
         <div className="card mt-4 p-5">
           {company.contact.person ? (

@@ -10,7 +10,9 @@
     "back": "Torna alle imprese",
     "problem": "Problema",
     "solution": "Soluzione",
+    "schools": "Istituti",
     "contact": "Contatto",
+    "products": "Prodotti",
     "website": "Sito",
     "empty": "Nessuna scheda corrisponde a questa ricerca.",
     "count": "{count, plural, one {# impresa} other {# imprese}}"

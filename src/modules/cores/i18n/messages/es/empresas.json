@@ -10,7 +10,9 @@
     "back": "Volver a empresas",
     "problem": "Problema",
     "solution": "Solución",
+    "schools": "Planteles",
     "contact": "Contacto",
+    "products": "Productos",
     "website": "Sitio",
     "empty": "Ninguna ficha coincide con esa búsqueda.",
     "count": "{count, plural, one {# empresa} other {# empresas}}"

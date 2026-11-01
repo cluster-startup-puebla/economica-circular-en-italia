@@ -10,7 +10,9 @@
     "back": "Back to companies",
     "problem": "Problem",
     "solution": "Solution",
+    "schools": "Schools",
     "contact": "Contact",
+    "products": "Products",
     "website": "Website",
     "empty": "No profile matches that search.",
     "count": "{count, plural, one {# company} other {# companies}}"
