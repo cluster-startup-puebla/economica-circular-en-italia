@@ -28,6 +28,7 @@
   "NotFound": {
     "title": "Esa página no está en el sitio",
     "description": "Las páginas fijas son inicio, empresas, ecosistema y proveedores.",
+    "descriptionWithoutProviders": "Las páginas fijas son inicio, empresas y ecosistema.",
     "cta": "Volver al inicio"
   }
 }

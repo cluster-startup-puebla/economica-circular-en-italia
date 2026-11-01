@@ -28,6 +28,7 @@
   "NotFound": {
     "title": "That page is not on this site",
     "description": "The fixed pages are home, companies, ecosystem, and providers.",
+    "descriptionWithoutProviders": "The fixed pages are home, companies, and ecosystem.",
     "cta": "Back to home"
   }
 }

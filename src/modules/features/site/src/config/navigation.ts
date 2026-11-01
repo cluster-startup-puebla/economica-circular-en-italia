@@ -6,3 +6,7 @@ export const NAV_ITEMS = [
 ] as const;
 
 export type NavKey = (typeof NAV_ITEMS)[number]["key"];
+
+export function visibleNavItems(showProviders: boolean) {
+  return NAV_ITEMS.filter((item) => showProviders || item.key !== "providers");
+}

@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/modules/cores/i18n/src/config/routing";
 import { Logo } from "@/modules/shared/ui/src/components";
-import { NAV_ITEMS } from "@/modules/features/site/src/config/navigation";
+import { showProviders } from "@/modules/cores/site/src/config/features";
+import { visibleNavItems } from "@/modules/features/site/src/config/navigation";
 
 export async function Footer() {
   const t = await getTranslations("Footer");
@@ -20,7 +21,7 @@ export async function Footer() {
         <div>
           <p className="text-micro uppercase tracking-wide text-ink-muted">{t("links")}</p>
           <ul className="mt-3 text-small">
-            {NAV_ITEMS.map((item) => (
+            {visibleNavItems(showProviders).map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-link inline-flex min-h-11 items-center">
                   {t(item.key)}

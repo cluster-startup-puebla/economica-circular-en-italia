@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/modules/cores/i18n/src/config/routing";
+import { showProviders } from "@/modules/cores/site/src/config/features";
 import { buildMetadata } from "@/modules/cores/site/src/services/page-metadata";
 import { Allies } from "@/modules/features/pages/src/sections/home/allies";
 import { Bridge } from "@/modules/features/pages/src/sections/home/bridge";
@@ -23,7 +24,7 @@ export async function generateMetadata({
     locale,
     route: "/",
     title: t("metaTitle"),
-    description: t("metaDescription"),
+    description: t(showProviders ? "metaDescription" : "metaDescriptionWithoutProviders"),
   });
 }
 
@@ -31,13 +32,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
+  const chapters = (t.raw("paths.chapters") as PathChapter[]).filter(
+    (chapter) => showProviders || chapter.href !== "/proveedores",
+  );
+  const steps = (t.raw("bridge.steps") as { title: string; description: string; role?: string }[]).filter(
+    (step) => showProviders || step.role !== "providers",
+  );
 
   return (
     <>
       <Hero
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
-        description={t("hero.description")}
+        description={t(showProviders ? "hero.description" : "hero.descriptionWithoutProviders")}
         primaryCta={t("hero.primaryCta")}
         secondaryCta={t("hero.secondaryCta")}
       />
@@ -48,17 +55,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       />
       <Paths
         eyebrow={t("paths.eyebrow")}
-        title={t("paths.title")}
-        intro={t("paths.intro")}
-        chapters={t.raw("paths.chapters") as PathChapter[]}
+        title={t(showProviders ? "paths.title" : "paths.titleWithoutProviders")}
+        intro={t(showProviders ? "paths.intro" : "paths.introWithoutProviders")}
+        chapters={chapters}
       />
       <Bridge
         eyebrow={t("bridge.eyebrow")}
         title={t("bridge.title")}
-        lead={t("bridge.lead")}
-        steps={t.raw("bridge.steps") as { title: string; description: string }[]}
+        lead={t(showProviders ? "bridge.lead" : "bridge.leadWithoutProviders")}
+        steps={steps}
       />
-      <ClosingCta title={t("closing.title")} description={t("closing.description")} cta={t("closing.cta")} />
+      {showProviders ? (
+        <ClosingCta title={t("closing.title")} description={t("closing.description")} cta={t("closing.cta")} />
+      ) : null}
     </>
   );
 }

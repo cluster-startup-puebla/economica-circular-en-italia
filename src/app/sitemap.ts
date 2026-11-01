@@ -2,13 +2,14 @@ import type { MetadataRoute } from "next";
 import { getClusters } from "@/data/clusters";
 import { companies } from "@/data/companies";
 import { routing } from "@/modules/cores/i18n/src/config/routing";
+import { showProviders } from "@/modules/cores/site/src/config/features";
 import { localeUrl } from "@/modules/cores/site/src/config/site";
 
 const ROUTES = [
   "/",
   "/empresas",
   "/ecosistema",
-  "/proveedores",
+  ...(showProviders ? ["/proveedores"] : []),
   ...getClusters().map((cluster) => `/ecosistema/${cluster.slug}`),
   ...companies.map((company) => `/empresas/${company.slug}`),
 ];

@@ -17,7 +17,7 @@ export function Bridge({ eyebrow, title, lead, steps }: BridgeProps) {
         <p className="text-micro uppercase tracking-wider text-accent">{eyebrow}</p>
         <h2 className="text-h2 mt-3 max-w-2xl font-display text-ink">{title}</h2>
         <p className="text-body-lg mt-4 max-w-2xl text-ink-secondary">{lead}</p>
-        <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ol className={`mt-10 grid gap-4 sm:grid-cols-2 ${steps.length > 2 ? "lg:grid-cols-3" : ""}`}>
           {steps.map((step, index) => (
             <li key={step.title} className="card p-6">
               <p className="text-micro text-accent">0{index + 1}</p>

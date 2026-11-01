@@ -7,9 +7,10 @@ import { Link, usePathname } from "@/modules/cores/i18n/src/config/routing";
 import { LocaleSwitcher } from "@/modules/cores/i18n/src/components/locale-switcher";
 import { ThemeToggle } from "@/modules/cores/theme/src/components/theme-toggle";
 import { Logo } from "@/modules/shared/ui/src/components";
-import { NAV_ITEMS } from "@/modules/features/site/src/config/navigation";
+import { visibleNavItems } from "@/modules/features/site/src/config/navigation";
 
-export function Header() {
+export function Header({ showProviders = false }: { showProviders?: boolean }) {
+  const navItems = visibleNavItems(showProviders);
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -81,7 +82,7 @@ export function Header() {
 
             <nav className="hidden lg:block" aria-label={t("label")}>
               <ul className="flex items-center gap-5">
-                {NAV_ITEMS.map((item) => (
+                {navItems.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
@@ -121,7 +122,7 @@ export function Header() {
             aria-label={t("label")}
           >
             <ul className="flex flex-col p-4">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

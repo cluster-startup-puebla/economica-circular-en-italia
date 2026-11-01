@@ -2,10 +2,12 @@
   "Home": {
     "metaTitle": "Messico sostenibile in Italia",
     "metaDescription": "Un ponte tra imprese messicane sostenibili e il mercato italiano. Imprese, ecosistema e fornitori in un unico sito.",
+    "metaDescriptionWithoutProviders": "Un ponte tra imprese messicane sostenibili e il mercato italiano. Imprese ed ecosistema in un unico sito.",
     "hero": {
       "eyebrow": "Messico · Italia",
       "title": "Il Messico sostenibile, con una porta in Italia",
       "description": "Riunisce l'ecosistema di Puebla, le imprese di quell'ecosistema che vogliono presentarsi in Italia e i fornitori che rendono operativo l'arrivo.",
+      "descriptionWithoutProviders": "Riunisce l'ecosistema di Puebla e le imprese di quell'ecosistema che vogliono presentarsi in Italia.",
       "primaryCta": "Vedi le imprese",
       "secondaryCta": "Conosci l'ecosistema",
       "mapLabel": "Mappa del Messico con Puebla nel colore della piattaforma"
@@ -18,7 +20,9 @@
     "paths": {
       "eyebrow": "Cosa c'è nel sito",
       "title": "Ecosistema, imprese e fornitori",
+      "titleWithoutProviders": "Ecosistema e imprese",
       "intro": "Il sito non è un solo elenco. Puebla organizza la sua industria in cluster, le imprese di quell'ecosistema presentano la loro offerta e i fornitori fanno sì che quell'offerta possa arrivare in Italia.",
+      "introWithoutProviders": "Il sito non è un solo elenco. Puebla organizza la sua industria in cluster e le imprese di quell'ecosistema presentano la loro offerta.",
       "chapters": [
         {
           "href": "/ecosistema",
@@ -45,7 +49,7 @@
           "href": "/empresas",
           "kicker": "L'offerta con scheda",
           "title": "Imprese",
-          "description": "Imprese dell'ecosistema che hanno già una scheda. Oggi l'elenco apre con Concora, Radek e Sabia, del Cluster di startup e innovazione, e con COMERE, del Cluster di plastiche ed economia circolare. Il marchio piccolo dice da quale cluster arrivano.",
+          "description": "Imprese dell'ecosistema che hanno già una scheda. Il marchio piccolo dice da quale cluster arrivano.",
           "link": "Vedi le imprese",
           "points": [
             {
@@ -89,6 +93,7 @@
       "eyebrow": "Come si leggono insieme",
       "title": "Dall'industria di Puebla al mercato italiano",
       "lead": "Prima il tavolo che organizza l'offerta, poi l'impresa che si presenta, e alla fine chi fa funzionare il passaggio.",
+      "leadWithoutProviders": "Prima il tavolo che organizza l'offerta, poi l'impresa che si presenta.",
       "steps": [
         {
           "title": "L'ecosistema ordina l'offerta",
@@ -99,6 +104,7 @@
           "description": "Prodotto, problema e soluzione, in spagnolo, inglese e italiano, con il marchio del suo cluster."
         },
         {
+          "role": "providers",
           "title": "Il fornitore rende operativo il passaggio",
           "description": "Pratiche, logistica, lingua e distribuzione perché l'arrivo non resti un'intenzione."
         }

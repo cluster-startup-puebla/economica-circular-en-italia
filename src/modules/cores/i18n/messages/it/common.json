@@ -28,6 +28,7 @@
   "NotFound": {
     "title": "Questa pagina non è nel sito",
     "description": "Le pagine fisse sono home, imprese, ecosistema e fornitori.",
+    "descriptionWithoutProviders": "Le pagine fisse sono home, imprese ed ecosistema.",
     "cta": "Torna alla home"
   }
 }

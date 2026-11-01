@@ -2,10 +2,12 @@
   "Home": {
     "metaTitle": "México Sustentable en Italia",
     "metaDescription": "Puente entre empresas mexicanas sustentables y el mercado italiano. Empresas, ecosistema y proveedores en un mismo sitio.",
+    "metaDescriptionWithoutProviders": "Puente entre empresas mexicanas sustentables y el mercado italiano. Empresas y ecosistema en un mismo sitio.",
     "hero": {
       "eyebrow": "México · Italia",
       "title": "México sustentable, con puerta en Italia",
       "description": "Reúne el ecosistema de Puebla, las empresas de ese ecosistema que quieren presentarse en Italia y los proveedores que hacen operable el aterrizaje.",
+      "descriptionWithoutProviders": "Reúne el ecosistema de Puebla y las empresas de ese ecosistema que quieren presentarse en Italia.",
       "primaryCta": "Ver empresas",
       "secondaryCta": "Conocer el ecosistema",
       "mapLabel": "Mapa de México con Puebla en el color de la plataforma"
@@ -18,7 +20,9 @@
     "paths": {
       "eyebrow": "Qué hay en el sitio",
       "title": "Ecosistema, empresas y proveedores",
+      "titleWithoutProviders": "Ecosistema y empresas",
       "intro": "El sitio no es una sola lista. Puebla organiza su industria en clústeres, las empresas de ese ecosistema presentan su oferta, y los proveedores hacen que esa oferta pueda aterrizar en Italia.",
+      "introWithoutProviders": "El sitio no es una sola lista. Puebla organiza su industria en clústeres y las empresas de ese ecosistema presentan su oferta.",
       "chapters": [
         {
           "href": "/ecosistema",
@@ -45,7 +49,7 @@
           "href": "/empresas",
           "kicker": "La oferta con ficha",
           "title": "Empresas",
-          "description": "Empresas del ecosistema que ya tienen ficha. Hoy el directorio abre con Concora, Radek y Sabia, del Clúster de Startups e Innovación, y con COMERE, del Clúster de Plásticos y Economía Circular. El sello chiquito dice de qué clúster vienen.",
+          "description": "Empresas del ecosistema que ya tienen ficha. El sello chiquito dice de qué clúster vienen.",
           "link": "Ver empresas",
           "points": [
             {
@@ -89,6 +93,7 @@
       "eyebrow": "Cómo se leen juntas",
       "title": "De la industria poblana al mercado italiano",
       "lead": "Primero la mesa que organiza la oferta, después la empresa que se presenta, y al final quien hace que el cruce funcione.",
+      "leadWithoutProviders": "Primero la mesa que organiza la oferta y después la empresa que se presenta.",
       "steps": [
         {
           "title": "El ecosistema ordena la oferta",
@@ -99,6 +104,7 @@
           "description": "Producto, problema y solución, en español, inglés e italiano, con el sello de su clúster."
         },
         {
+          "role": "providers",
           "title": "El proveedor hace operable el cruce",
           "description": "Trámites, logística, idioma y distribución para que el aterrizaje no se quede en una intención."
         }

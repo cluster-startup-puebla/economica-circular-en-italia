@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { providers } from "@/data/directory";
 import { routing } from "@/modules/cores/i18n/src/config/routing";
+import { showProviders } from "@/modules/cores/site/src/config/features";
 import type { Locale } from "@/modules/cores/i18n/src/interfaces/i18n.interface";
 import { buildMetadata } from "@/modules/cores/site/src/services/page-metadata";
 import { DirectoryList } from "@/modules/features/directory/src/directory-list";
@@ -16,6 +18,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  if (!showProviders) notFound();
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Providers" });
   return buildMetadata({
@@ -27,6 +30,7 @@ export async function generateMetadata({
 }
 
 export default async function ProvidersPage({ params }: { params: Promise<{ locale: string }> }) {
+  if (!showProviders) notFound();
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Providers");
