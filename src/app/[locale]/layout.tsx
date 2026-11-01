@@ -93,14 +93,16 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-surface font-body text-ink">
-        <DocumentScripts />
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main id="contenido" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
+        <div className="page-frame flex min-h-full flex-1 flex-col">
+          <DocumentScripts />
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            <main id="contenido" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </NextIntlClientProvider>
+        </div>
       </body>
     </html>
   );

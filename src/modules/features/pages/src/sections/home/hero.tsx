@@ -10,18 +10,18 @@ interface HeroProps {
 
 export function Hero({ eyebrow, title, description, primaryCta, secondaryCta }: HeroProps) {
   return (
-    <section className="relative isolate bg-white text-[#1a1a1a]">
+    <section className="relative isolate mx-3 mt-4 overflow-hidden rounded-lg bg-white text-[#1a1a1a] sm:mx-4 sm:mt-5 lg:mx-6 lg:mt-6">
       <div className="relative">
         <img
           src="/hero/landscape.webp"
           srcSet="/hero/landscape.webp 1024w, /hero/landscape-1920.webp 1920w"
-          sizes="100vw"
+          sizes="(min-width: 80rem) 80rem, 100vw"
           alt=""
           width={1024}
           height={572}
           fetchPriority="high"
           decoding="async"
-          className="h-[17.5rem] w-full object-cover object-[78%_42%] sm:h-[22rem] md:h-auto md:object-fill"
+          className="h-[15.5rem] w-full object-cover object-[72%_46%] sm:h-[18.5rem] md:h-[22rem] lg:h-[26rem] xl:h-[30rem]"
         />
         <HeroLip className="absolute inset-x-0 -bottom-px h-12 w-full md:hidden" />
         <HeroMask className="pointer-events-none absolute inset-0 hidden h-full w-full xl:block" />

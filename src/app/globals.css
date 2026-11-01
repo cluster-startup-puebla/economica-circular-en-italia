@@ -158,6 +158,12 @@
 }
 
 @layer components {
+  .page-frame {
+    width: 100%;
+    max-width: var(--container-site);
+    margin-inline: auto;
+  }
+
   .container-site {
     max-width: var(--container-site);
     margin-inline: auto;
